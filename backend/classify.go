@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 
 	. "github.com/crhntr/bayesian"
-	. "github.com/crhntr/litsphere/internal"
+	. "github.com/crhntr/math352/internal"
 )
 
 func classify(c *gin.Context) {

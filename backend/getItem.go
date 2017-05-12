@@ -3,7 +3,7 @@ package main
 import (
 	"strconv"
 
-	. "github.com/crhntr/litsphere/internal"
+	. "github.com/crhntr/math352/internal"
 	"github.com/gin-gonic/gin"
 )
 

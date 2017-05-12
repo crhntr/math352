@@ -7,7 +7,7 @@ import (
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	. "github.com/crhntr/litsphere/internal"
+	. "github.com/crhntr/math352/internal"
 )
 
 func (article Article) Title() string {

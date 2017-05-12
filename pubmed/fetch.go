@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"strings"
 
-	. "github.com/crhntr/litsphere/internal"
+	. "github.com/crhntr/math352/internal"
 )
 
 const dateFmt = "2006/01/02"

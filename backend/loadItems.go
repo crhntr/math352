@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"gopkg.in/mgo.v2/bson"
 
-	. "github.com/crhntr/litsphere/pubmed"
+	. "github.com/crhntr/math352/pubmed"
 )
 
 func fetch(c *gin.Context) {
