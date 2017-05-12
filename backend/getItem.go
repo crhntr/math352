@@ -3,7 +3,6 @@ package main
 import (
 	"strconv"
 
-	. "github.com/crhntr/math352/internal"
 	"github.com/gin-gonic/gin"
 )
 
