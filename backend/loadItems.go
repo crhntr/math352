@@ -60,7 +60,9 @@ func fetch(c *gin.Context) {
 				log.Println("adding items")
 				log.Println(nItems)
 				for _, itm := range nItems {
+					itemsMut.Lock()
 					items = append(items, itm)
+					itemsMut.Unlock()
 				}
 			}
 
