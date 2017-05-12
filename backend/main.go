@@ -13,11 +13,11 @@ import (
 const staticDirectoryPath = "static/"
 
 var (
-	verbose    bool
-	classifier *Classifier
-)
+	verbose bool
 
-var (
+	classifier      *Classifier
+	classifierMutex *sync.Mutex
+
 	itemsMut *sync.Mutex
 	items    []Item
 
@@ -36,12 +36,8 @@ func main() {
 
 	startCleanupJob()
 
-	var err error
 	classifier = NewClassifier("relevant", "irrelevent")
-	if err != nil {
-		panic(err)
-	}
-
+	classifierMutex = &sync.Mutex{}
 	router := gin.Default()
 
 	router.StaticFile("/", staticDirectoryPath+"index.html")
@@ -60,7 +56,7 @@ func main() {
 	})
 	router.GET("/api/class/:name/items", getClass)
 
-	router.PATCH("/api/item/:id/classes", classify)
+	router.PATCH("/api/item/:id/classes", patchItemClasses)
 	router.GET("/api/item/:id", getItem)
 	router.GET("/api/item", getItems)
 

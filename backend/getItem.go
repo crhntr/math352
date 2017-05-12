@@ -35,6 +35,8 @@ func getClass(c *gin.Context) {
 	if err != nil {
 		threshold = 0.5
 	}
+	classifierMutex.Lock()
+	defer classifierMutex.Unlock()
 
 	classifiedItems := []Item{}
 

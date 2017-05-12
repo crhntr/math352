@@ -9,7 +9,7 @@ import (
 	. "github.com/crhntr/math352/internal"
 )
 
-func classify(c *gin.Context) {
+func patchItemClasses(c *gin.Context) {
 	type Data struct {
 		Classes []string `json:"classes"`
 	}
@@ -29,6 +29,8 @@ func classify(c *gin.Context) {
 		})
 		return
 	}
+	classifierMutex.Lock()
+	defer classifierMutex.Unlock()
 
 	for _, class := range data.Classes {
 		classifier.Learn(Tokenize(items[id].Title()), Class(class))
