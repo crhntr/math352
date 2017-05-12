@@ -31,9 +31,10 @@ func init() {
 }
 
 func main() {
-
 	itemsMut = &sync.Mutex{}
 	indexMut = &sync.Mutex{}
+
+	startCleanupJob()
 
 	var err error
 	classifier = NewClassifier("relevant", "irrelevent")
@@ -61,6 +62,7 @@ func main() {
 
 	router.PATCH("/api/item/:id/classes", classify)
 	router.GET("/api/item/:id", getItem)
+	router.GET("/api/item", getItems)
 
 	router.Run()
 }

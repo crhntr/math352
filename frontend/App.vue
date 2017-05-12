@@ -2,7 +2,12 @@
 	<div>
 		<div class="page">
 			<h1>Load Data From PubMed</h1>
-			<button @click="fetch()">Fetch</button>
+			<button @click="fetch()" v-fi="show_fetch">Fetch</button>
+			<div>
+				<div v-for="item in all_tems">
+					
+				</div>
+			</div>
 		</div>
 		<div class="page">
 			<h1>About Bayesian</h1>
@@ -43,6 +48,8 @@
 	      threshold: 0.5,
 	      newCategory: '',
 	      categories: ['relevant', 'irrelevent'],
+				all_tems: [],
+				show_fetch: true,
 	      item: {
 	        data: {},
 					id: 0,
@@ -59,16 +66,27 @@
 				})
 			},
 			fetch() {
-				this.$http.post("/act/item/fetch", this.query, {params:{"days": this.weeks_back}})
+				this.show_fetch = false
+				this.$http.post("/act/item/fetch", this.query, {params:{"days": this.weeks_back}}).then(response => {
+					this.show_fetch = false
+				}, response => {
+					this.show_fetch = true
+				})
+				this.$http.get("/api/items").then(response => {
+					this.all_tems = response.data.data
+				}, response => {
+					console.log(response)
+				})
 			},
  	    next() {
 	      this.$http.get("/act/item/next").then(response => {
 					this.item.data = response.data.data;
 					this.item.id = response.data.id;
 	      }, response => {
-	        alert(JSON.stringify(response));
+					alert("There was an error getting the next item")
+	        console(JSON.stringify(response));
 	      });
-	    }
+	    },
 	  }
 	}
 </script>

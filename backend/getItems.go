@@ -9,9 +9,10 @@ import (
 
 func getItems(c *gin.Context) {
 	type ItemRecord struct {
-		ID    string `json:"ID"`
-		Title string `json:"Title"`
-		Link  string `json:"Link"`
+		ID    string `json:"id"`
+		Title string `json:"title"`
+		Body  string `json:"body"`
+		Link  string `json:"link"`
 	}
 
 	itemRecords := []ItemRecord{}
@@ -24,6 +25,7 @@ func getItems(c *gin.Context) {
 			ID:    strconv.Itoa(i),
 			Title: item.Title(),
 			Link:  fmt.Sprintf("/api/item/%d", i),
+			Body:  item.Body(),
 		})
 	}
 	c.JSON(200, gin.H{
