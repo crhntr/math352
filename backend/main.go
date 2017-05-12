@@ -58,7 +58,7 @@ func main() {
 
 	router.PATCH("/api/item/:id/classes", patchItemClasses)
 	router.GET("/api/item/:id", getItem)
-	router.GET("/api/item", getItems)
+	router.GET("/api/items", getItems)
 
 	router.Run()
 }
