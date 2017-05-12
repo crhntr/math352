@@ -1,0 +1,15 @@
+*.priv
+*.pub
+
+vendor/*
+!vendor/vendor.json
+node_modules
+static/vendorg
+server
+
+*.rss
+
+**.DC_Store
+.DC_Store
+
+data

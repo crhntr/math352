@@ -1,0 +1,22 @@
+{
+  "name": "litsphere",
+  "description": "minimum litsphere",
+  "author": "",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "watch": "./node_modules/.bin/webpack --config webpack.config.js --watch"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "css-loader": "^0.27.3",
+    "vue": "2.2.4",
+    "vue-router": "2.2.1",
+    "vue-loader": "^11.3.2",
+    "vue-template-compiler": "2.2.4",
+    "webpack": "^2.3.1"
+  }
+}
