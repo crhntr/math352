@@ -5,3 +5,14 @@
   padding: 10px;
   min-height:50vh;
 }
+.article h1{
+	font-size: 14px;
+}
+.article p{
+	font-size: 12px;
+}
+.article {
+	margin: 5px;
+	padding: 10px;
+	background-color: #eee;
+}
