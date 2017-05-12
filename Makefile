@@ -2,7 +2,7 @@
 
 build: frontend backend
 
-run: build jwt_token_key.priv
+run: build
 	./server
 
 frontend: static/bundles/main.js
@@ -14,10 +14,6 @@ backend: server
 
 server: $(wildcard backend/*.go)
 	cd backend && go build -o ../server
-
-jwt_token_key.priv:
-	openssl genrsa -out backend/jwt_token_key.priv 2048
-	openssl rsa -in backend/jwt_token_key.priv -pubout > backend/jwt_token_key.pub
 
 clean:
 	-rm server

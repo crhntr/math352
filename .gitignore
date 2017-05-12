@@ -5,6 +5,7 @@ vendor/*
 !vendor/vendor.json
 node_modules
 static/vendorg
+static/bundles/*
 server
 
 *.rss
