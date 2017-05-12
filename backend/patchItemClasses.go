@@ -33,7 +33,6 @@ func patchItemClasses(c *gin.Context) {
 	defer classifierMutex.Unlock()
 
 	for _, class := range data.Classes {
-		classifier.Learn(Tokenize(items[id].Title()), Class(class))
-		classifier.Learn(Tokenize(items[id].Body()), Class(class))
+		classifier.Learn(append(Tokenize(items[id].Title()), Tokenize(items[id].Body())...), Class(class))
 	}
 }
