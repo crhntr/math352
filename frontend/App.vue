@@ -1,26 +1,30 @@
 <template>
 	<div>
 		<div class="page">
-			<h1>Load Data From PubMed</h1>
-			<button @click="fetch()" v-fi="show_fetch">Fetch</button>
+			<h1>About Naive Bayes Classification</h1>
+			<p>
+				In machine learning, naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.
+			</p>
+			<div height="100vh">
+				<img src="/src/theorem.png" height="100px"/>
+			</div>
+		</div>
+		<div class="page">
+			<h1>STEP 1: Load Data From PubMed</h1>
+			<p>
+				This step request articles from PubMed using a pubmed query ({{query}}). The pubmed api simply searches a database of articles by date added. The goal of this project is to filter these using a machine learning algorithm based on Naive Bayes classification.
+			</p>
+			<button @click="fetch()" v-if="show_fetch">Fetch</button>
+			<button @click="updateItems()" v-if="!show_fetch">Update Items</button>
 			<div>
-				<div v-for="item in all_tems">
-					
+				<div v-for="item in all_items" class="article">
+					<h1 @click="item.show_body = !item.show_body">{{item.data.title}}</h1>
+					<p v-if="item.show_body">{{item.data.body}}</p>
 				</div>
 			</div>
 		</div>
 		<div class="page">
-			<h1>About Bayesian</h1>
-			<div height="100vh">
-				<img src="/src/theorem.png" height="100px"/>
-			</div>
-			<strong>Naive Bayes classifier</strong>
-			<p>
-				In machine learning, naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.
-			</p>
-		</div>
-		<div class="page">
-			<h1>Iterate through Articles and Classify</h1>
+			<h1>STEP 2: Classify Articles</h1>
 			<article >
 				<h2>{{item.data.title}}</h2>
 				<p>{{item.data.abstract}}</p>
@@ -35,9 +39,10 @@
 			</div>
 		</div>
 		<div class="page">
-			<h1>Show Articles Per Category</h1>
-			<a href="/api/class/relevant">class relevant</a>
-			<a href="/api/class/relevant/items">class relevant items</a>
+			<h1>STEP 3: Show Classified Articles</h1>
+			<div v-for="category in categories">
+				<h2>{{category}}</h2>
+			</div>
 		</div>
 	</div>
 </template>
@@ -45,10 +50,11 @@
 	export default {
 	  data() {
 	    return {
+				query: "talimogene laherparepvec  [All Fields]",
 	      threshold: 0.5,
 	      newCategory: '',
 	      categories: ['relevant', 'irrelevent'],
-				all_tems: [],
+				all_items: [],
 				show_fetch: true,
 	      item: {
 	        data: {},
@@ -65,17 +71,27 @@
 					"classes": this.item.categories,
 				})
 			},
+			updateItems() {
+				this.$http.get("/api/items").then(response => {
+					this.$delete(this.all_items)
+					let items = []
+					for (let item of response.data.data) {
+						this.all_items.push({
+							show_body: false,
+							data: item != "" ? item : "(no body)"
+						})
+					}
+				}, response => {
+					console.log(response)
+				})
+			},
 			fetch() {
 				this.show_fetch = false
 				this.$http.post("/act/item/fetch", this.query, {params:{"days": this.weeks_back}}).then(response => {
 					this.show_fetch = false
+					this.updateItems()
 				}, response => {
 					this.show_fetch = true
-				})
-				this.$http.get("/api/items").then(response => {
-					this.all_tems = response.data.data
-				}, response => {
-					console.log(response)
 				})
 			},
  	    next() {
@@ -87,6 +103,9 @@
 	        console(JSON.stringify(response));
 	      });
 	    },
+			refreshCategory(category) {
+
+			}
 	  }
 	}
 </script>
