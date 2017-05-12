@@ -54,7 +54,6 @@ func main() {
 		name := c.Param("name")
 		c.JSON(200, classifier.WordsByClass(Class(name)))
 	})
-	router.GET("/api/class/:name/items", getClass)
 
 	router.PATCH("/api/item/:id/classes", patchItemClasses)
 	router.GET("/api/item/:id", getItem)
