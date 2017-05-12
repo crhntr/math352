@@ -14,8 +14,8 @@ func nextItem(c *gin.Context) {
 	}
 
 	c.JSON(200, gin.H{"data": items[index], "id": index, "type": "pubmed"})
-	index++
-	if index > len(items) {
+
+	if index++; index == len(items) {
 		index = 0
 	}
 }
