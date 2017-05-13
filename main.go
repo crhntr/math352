@@ -38,7 +38,7 @@ func main() {
 
 	classifier = bayesian.NewClassifier(defaultClasses...)
 	router := gin.Default()
-
+	router.Use(regesterRequestMiddleare)
 	router.StaticFile("/", staticDirectoryPath+"index.html")
 	router.StaticFS("/src/", http.Dir(staticDirectoryPath))
 	// router.GET("/api/feed/:id/items", setDB, getFeedItemsHandler) // with optional params: year, month day

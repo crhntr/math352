@@ -6,12 +6,18 @@ import (
 	"time"
 
 	. "github.com/crhntr/math352/internal"
+	"github.com/gin-gonic/gin"
 )
 
 var (
 	lastRequestMut *sync.Mutex
 	lastRequest    time.Time
 )
+
+func regesterRequestMiddleare(c *gin.Context) {
+	registerRequest()
+	c.Next()
+}
 
 func registerRequest() {
 	lastRequestMut.Lock()
@@ -21,7 +27,7 @@ func registerRequest() {
 
 func startCleanupJob() {
 	log.Println("starting cleanup Job")
-	cleanupJobTicker := time.NewTicker(2 * time.Hour)
+	cleanupJobTicker := time.NewTicker(30 * time.Minute)
 	if lastRequestMut == nil {
 		lastRequestMut = &sync.Mutex{}
 	}
@@ -30,7 +36,7 @@ func startCleanupJob() {
 	go func() {
 		for range cleanupJobTicker.C {
 			log.Println("attepting cleanup Job")
-			if time.Since(lastRequest) > time.Hour {
+			if time.Since(lastRequest) > 15*time.Minute {
 				cleanupItems()
 			}
 		}
@@ -40,6 +46,8 @@ func startCleanupJob() {
 func cleanupItems() {
 	itemsMut.Lock()
 	defer itemsMut.Unlock()
+	fetched = false
+
 	if len(items) > 0 {
 		log.Printf("cleaning up items (%d items removed)", len(items))
 		items = []Item{}

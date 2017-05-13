@@ -13,7 +13,15 @@ import (
 
 func fetch(c *gin.Context) {
 	if fetched {
-		return
+		if forced := c.Query("force"); forced != "true" {
+			c.JSON(http.StatusLocked, gin.H{
+				"error": "fetch disabled for a while (after an hour of no use it will be available again)",
+			})
+			return
+		} else {
+			log.Print("FORCED fetch started")
+			cleanupItems()
+		}
 	}
 	fetched = true
 	log.Print()
