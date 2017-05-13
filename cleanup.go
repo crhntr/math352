@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	lastRequestMut *sync.Mutex
+	lastRequestMut = &sync.Mutex{}
 	lastRequest    time.Time
 )
 
@@ -28,9 +28,6 @@ func registerRequest() {
 func startCleanupJob() {
 	log.Println("starting cleanup Job")
 	cleanupJobTicker := time.NewTicker(30 * time.Minute)
-	if lastRequestMut == nil {
-		lastRequestMut = &sync.Mutex{}
-	}
 	registerRequest()
 
 	go func() {

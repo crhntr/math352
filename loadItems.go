@@ -1,27 +1,45 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"strconv"
+	"sync"
 	"time"
 
 	. "github.com/crhntr/math352/pubmed"
 	"github.com/gin-gonic/gin"
 )
 
+var (
+	lastFetchedMut = &sync.Mutex{}
+	lastFetched    time.Time
+)
+
 func fetch(c *gin.Context) {
 	if fetched {
-		if forced := c.Query("force"); forced != "true" {
-			c.JSON(http.StatusLocked, gin.H{
-				"error": "fetch disabled for a while (after an hour of no use it will be available again)",
-			})
-			return
-		} else {
-			log.Print("FORCED fetch started")
-			cleanupItems()
-		}
+		func() {
+			lastFetchedMut.Lock()
+			defer lastFetchedMut.Unlock()
+			since := time.Since(lastFetched)
+			if since < 5*time.Minute {
+				c.JSON(http.StatusLocked, gin.H{
+					"error": fmt.Sprintf("fetch disabled for a while (it will be unlocked in %f minutes)", since.Minutes()),
+				})
+			}
+		}()
+
+		// if forced := c.Query("force"); forced != "true" {
+		// 	c.JSON(http.StatusLocked, gin.H{
+		// 		"error": "fetch disabled for a while (after an hour of no use it will be available again)",
+		// 	})
+		// 	return
+		// } else {
+		// 	log.Print("FORCED fetch started")
+		// 	cleanupItems()
+		// }
 	}
 	fetched = true
 	log.Print()
@@ -53,7 +71,7 @@ func fetch(c *gin.Context) {
 	nDaysAgo := time.Now().Add(-1 * time.Duration(days) * 24 * time.Hour)
 	log.Printf("nDaysAgo: %s", nDaysAgo)
 
-	go func() {
+	func() {
 		timeIter := time.Now()
 		for timeIter.After(nDaysAgo) {
 			nItems, err := q.FetchItemsForDay(timeIter)
@@ -75,6 +93,7 @@ func fetch(c *gin.Context) {
 		}
 
 		log.Printf("len(item)= %d", len(items))
+		time.Sleep(5 * time.Second)
 	}()
 	c.Status(http.StatusAccepted)
 }
