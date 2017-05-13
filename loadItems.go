@@ -30,7 +30,6 @@ func fetch(c *gin.Context) {
 				})
 			}
 		}()
-
 		// if forced := c.Query("force"); forced != "true" {
 		// 	c.JSON(http.StatusLocked, gin.H{
 		// 		"error": "fetch disabled for a while (after an hour of no use it will be available again)",
@@ -41,8 +40,13 @@ func fetch(c *gin.Context) {
 		// 	cleanupItems()
 		// }
 	}
+	func() {
+		lastFetchedMut.Lock()
+		defer lastFetchedMut.Unlock()
+		lastFetched = time.Now()
+	}()
 	fetched = true
-	log.Print()
+
 	daysParam := c.Query("days")
 	if daysParam == "" {
 		daysParam = "30"
