@@ -35,13 +35,11 @@ func getItems(c *gin.Context) {
 			Categories: map[Class]float64{},
 		}
 
-		if classifier.Learned() > 0 {
-			scores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
+		scores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
 
-			ir.LikelyCategory = classifier.Classes[likely]
-			for i, class := range classifier.Classes {
-				ir.Categories[class] = scores[i]
-			}
+		ir.LikelyCategory = classifier.Classes[likely]
+		for i, class := range classifier.Classes {
+			ir.Categories[class] = scores[i]
 		}
 
 		itemRecords = append(itemRecords, ir)
