@@ -17,7 +17,7 @@
 			<button @click="fetch()" v-if="show_fetch">Fetch</button>
 			<button @click="updateItems()" v-if="!show_fetch">Update Items</button>
 			<div>
-				<div v-for="item in all_items" class="article">
+				<div v-for="item in items" class="article">
 					<h1 @click="item.show_body = !item.show_body">{{item.data.title}}</h1>
 					<p v-if="item.show_body">{{item.data.body}}</p>
 				</div>
@@ -27,21 +27,15 @@
 			<h1>STEP 2: Classify Articles</h1>
 			<article >
 				<h2>{{item.data.title}}</h2>
-				<p>{{item.data.abstract}}</p>
+				<p>{{item.data.body}}</p>
 			</article>
 			<div>
-				<div v-for="category in categories">
-					<input type="checkbox" :value="category" :id="category" v-model="item.categories">
-					<label :for="category">{{category}}</label>
+				<div v-for="(score, cat) in item.data.categories">
+					<input type="checkbox" :value="cat" :id="cat" v-model="item.categories">
+					<label :for="cat">{{cat}}</label>
 				</div>
 				<input type="text" @keyup.enter="categories.push(newCategory)" v-model="newCategory" placeholder="Category"/>
 				<button @click="submitClasses(); next()">Next</button>
-			</div>
-		</div>
-		<div class="page">
-			<h1>STEP 3: Show Classified Articles</h1>
-			<div v-for="category in categories">
-				<h2>{{category}}</h2>
 			</div>
 		</div>
 	</div>
@@ -53,9 +47,10 @@
 				query: "talimogene laherparepvec  [All Fields]",
 	      threshold: 0.5,
 	      newCategory: '',
-	      categories: ['relevant', 'irrelevent'],
-				all_items: [],
+				items: [],
 				show_fetch: true,
+				current_item_id: 0,
+				show_score: 0,
 	      item: {
 	        data: {},
 					id: 0,
@@ -67,19 +62,27 @@
 	  created() {},
 	  methods: {
 			submitClasses() {
-				this.$http.patch("/api/item/"+this.item.id+"/classes", {
+				this.$http.patch("/api/item/"+this.current_item_id+"/classes", {
 					"classes": this.item.categories,
 				})
 			},
 			updateItems() {
 				this.$http.get("/api/items").then(response => {
-					this.$delete(this.all_items)
-					let items = []
+					this.items = []
 					for (let item of response.data.data) {
-						this.all_items.push({
+						item.body = item.body || "(no body)"
+						if (Object.keys(item.categories).length === 0) {
+							this.show_score = false
+							item.categories['relevant'] = 0
+							item.categories['irrelevant'] = 0
+						}
+						console.log(item)
+						let item_wrapper = {
 							show_body: false,
-							data: item != "" ? item : "(no body)"
-						})
+							data: item,
+							categories: []
+						}
+						this.items.push(item_wrapper)
 					}
 				}, response => {
 					console.log(response)
@@ -95,13 +98,8 @@
 				})
 			},
  	    next() {
-	      this.$http.get("/act/item/next").then(response => {
-					this.item.data = response.data.data;
-					this.item.id = response.data.id;
-	      }, response => {
-					alert("There was an error getting the next item")
-	        console(JSON.stringify(response));
-	      });
+				this.item = this.items[this.current_item_id]
+				this.current_item_id++
 	    },
 			refreshCategory(category) {
 
