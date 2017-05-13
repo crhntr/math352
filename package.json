@@ -1,6 +1,10 @@
 {
   "name": "math352",
   "description": "class project",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/crhntr/math352"
+  },
   "author": "",
   "license": "MIT",
   "version": "1.0.0",
