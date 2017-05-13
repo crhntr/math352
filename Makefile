@@ -3,18 +3,18 @@
 build: frontend backend
 
 run: build
-	./server
+	./math352
 
 frontend: static/bundles/main.js
 
 static/bundles/main.js: $(wildcard frontend/*)
-	cd frontend && npm run build && cd ..
+	npm run build
 
-backend: server
+backend: math352
 
-server: $(wildcard *.go)
+math352: $(wildcard *.go)
 	go build
 
 clean:
-	-rm server
+	-rm math352
 	-rm -r static/bundles
