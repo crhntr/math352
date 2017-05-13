@@ -20,6 +20,7 @@
 				<div v-for="item in items" class="article">
 					<h1 @click="item.show_body = !item.show_body">{{item.data.title}}</h1>
 					<p v-if="item.show_body">{{item.data.body}}</p>
+					<p v-if="item.show_body">{{item.data.categories}}</p>
 				</div>
 			</div>
 		</div>
@@ -35,7 +36,7 @@
 					<label :for="cat">{{cat}}</label>
 				</div>
 				<input type="text" @keyup.enter="categories.push(newCategory)" v-model="newCategory" placeholder="Category"/>
-				<button @click="submitClasses(); next()">Next</button>
+				<button @click="submitClasses(); next(); set_default_categories()">Next</button>
 			</div>
 		</div>
 	</div>
@@ -45,8 +46,9 @@
 	  data() {
 	    return {
 				query: "talimogene laherparepvec  [All Fields]",
-	      threshold: 0.5,
+	      threshold: 0.02,
 	      newCategory: '',
+				categories: [],
 				items: [],
 				show_fetch: true,
 				current_item_id: 0,
@@ -54,7 +56,6 @@
 	      item: {
 	        data: {},
 					id: 0,
-	        categories: [],
 	      },
 				query: "talimogene laherparepvec [All Fields]"
 	    }
@@ -62,9 +63,11 @@
 	  created() {},
 	  methods: {
 			submitClasses() {
-				this.$http.patch("/api/item/"+this.current_item_id+"/classes", {
-					"classes": this.item.categories,
-				})
+				if (this.item.categories.length > 0) {
+					this.$http.patch("/api/item/"+this.current_item_id+"/classes", {
+						"classes": this.item.categories,
+					})
+				}
 			},
 			updateItems() {
 				this.$http.get("/api/items").then(response => {
@@ -82,6 +85,8 @@
 							categories: []
 						})
 					}
+					this.current_item_id = 0;
+					this.item = this.items[this.current_item_id]
 				}, response => {
 					console.log(response)
 				})
@@ -96,9 +101,20 @@
 				})
 			},
  	    next() {
-				this.item = this.items[this.current_item_id]
 				this.current_item_id++
+				if (this.current_item_id >= this.items.length) {
+					this.current_item_id = 0
+					alert("you have seen every article and now are starting again")
+				}
+				console.log("next: " + this.current_item_id)
+				this.item = this.items[this.current_item_id]
 	    },
+			set_default_categories() {
+				console.log(this.item)
+				for(let cl in this.item.data.categories) {
+					console.log(cl, this.item.data[cl])
+				}
+			},
 			refreshCategory(category) {
 
 			}

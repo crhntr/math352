@@ -16,12 +16,13 @@ var (
 	verbose bool
 
 	classifier      *Classifier
-	classifierMutex *sync.Mutex
+	classifierMutex = &sync.Mutex{}
+	classified      = 0
 
-	itemsMut *sync.Mutex
+	itemsMut = &sync.Mutex{}
 	items    []Item
 
-	indexMut *sync.Mutex
+	indexMut     = &sync.Mutex{}
 	index    int = 0
 	fetched      = false
 
@@ -33,13 +34,9 @@ func init() {
 }
 
 func main() {
-	itemsMut = &sync.Mutex{}
-	indexMut = &sync.Mutex{}
-
 	startCleanupJob()
 
 	classifier = NewClassifier(defaultClasses...)
-	classifierMutex = &sync.Mutex{}
 	router := gin.Default()
 
 	router.StaticFile("/", staticDirectoryPath+"index.html")

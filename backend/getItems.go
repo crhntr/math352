@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 
 	. "github.com/crhntr/bayesian"
@@ -11,13 +10,17 @@ import (
 )
 
 func getItems(c *gin.Context) {
+	type Category struct {
+		Prob float64 `json:"prob"`
+		Log  float64 `json:"log"`
+	}
 	type ItemRecord struct {
-		ID             string            `json:"id"`
-		Title          string            `json:"title"`
-		Body           string            `json:"body"`
-		Link           string            `json:"link"`
-		LikelyCategory Class             `json:"likely_category"`
-		Categories     map[Class]float64 `json:"categories"`
+		ID             string             `json:"id"`
+		Title          string             `json:"title"`
+		Body           string             `json:"body"`
+		Link           string             `json:"link"`
+		LikelyCategory Class              `json:"likely_category"`
+		Categories     map[Class]Category `json:"categories"`
 	}
 
 	itemRecords := []ItemRecord{}
@@ -34,20 +37,23 @@ func getItems(c *gin.Context) {
 			Link:           fmt.Sprintf("/api/item/%d", i),
 			Body:           item.Body(),
 			LikelyCategory: "",
-			Categories:     map[Class]float64{},
+			Categories:     map[Class]Category{},
 		}
 
-		if classifier.Learned() > 0 {
-			log.Print("here")
-			scores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
+		if classified > 5 {
+			lgscores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
+			pbscores, likely, _ := classifier.ProbScores(Tokenize(item.Title() + " " + item.Body()))
 
 			ir.LikelyCategory = classifier.Classes[likely]
 			for i, class := range classifier.Classes {
-				ir.Categories[class] = scores[i]
+				ir.Categories[class] = Category{
+					Log:  lgscores[i],
+					Prob: pbscores[i],
+				}
 			}
 		} else {
 			for _, dclass := range defaultClasses {
-				ir.Categories[dclass] = 0.0
+				ir.Categories[dclass] = Category{}
 			}
 		}
 
