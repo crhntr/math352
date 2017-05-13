@@ -4,11 +4,6 @@
 	"GodepVersion": "v79",
 	"Deps": [
 		{
-			"ImportPath": "github.com/crhntr/bayesian",
-			"Comment": "1.0-54-g2714aaa",
-			"Rev": "2714aaa85ec7cbd1f238ba9c395c2a6493f30caf"
-		},
-		{
 			"ImportPath": "github.com/gin-gonic/gin",
 			"Comment": "v1.1.4",
 			"Rev": "e2212d40c62a98b388a5eb48ecbdcf88534688ba"
@@ -26,6 +21,11 @@
 		{
 			"ImportPath": "github.com/golang/protobuf/proto",
 			"Rev": "c9c7427a2a70d2eb3bafa0ab2dc163e45f143317"
+		},
+		{
+			"ImportPath": "github.com/jbrukh/bayesian",
+			"Comment": "1.0-53-gbf3f261",
+			"Rev": "bf3f261f9a9c61145c60d47665b0518cc32c774f"
 		},
 		{
 			"ImportPath": "github.com/manucorporat/sse",

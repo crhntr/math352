@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	. "github.com/crhntr/bayesian"
 	. "github.com/crhntr/math352/internal"
+	"github.com/jbrukh/bayesian"
 )
 
 func patchItemClasses(c *gin.Context) {
@@ -33,6 +33,6 @@ func patchItemClasses(c *gin.Context) {
 	defer classifierMutex.Unlock()
 	classified++
 	for _, class := range data.Classes {
-		classifier.Learn(append(Tokenize(items[id].Title()), Tokenize(items[id].Body())...), Class(class))
+		classifier.Learn(append(Tokenize(items[id].Title()), Tokenize(items[id].Body())...), bayesian.Class(class))
 	}
 }

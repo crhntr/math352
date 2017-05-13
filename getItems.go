@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strconv"
 
-	. "github.com/crhntr/bayesian"
 	. "github.com/crhntr/math352/internal"
 	"github.com/gin-gonic/gin"
+	"github.com/jbrukh/bayesian"
 )
 
 func getItems(c *gin.Context) {
@@ -15,12 +15,12 @@ func getItems(c *gin.Context) {
 		Log  float64 `json:"log"`
 	}
 	type ItemRecord struct {
-		ID             string             `json:"id"`
-		Title          string             `json:"title"`
-		Body           string             `json:"body"`
-		Link           string             `json:"link"`
-		LikelyCategory Class              `json:"likely_category"`
-		Categories     map[Class]Category `json:"categories"`
+		ID             string                      `json:"id"`
+		Title          string                      `json:"title"`
+		Body           string                      `json:"body"`
+		Link           string                      `json:"link"`
+		LikelyCategory bayesian.Class              `json:"likely_category"`
+		Categories     map[bayesian.Class]Category `json:"categories"`
 	}
 
 	itemRecords := []ItemRecord{}
@@ -37,7 +37,7 @@ func getItems(c *gin.Context) {
 			Link:           fmt.Sprintf("/api/item/%d", i),
 			Body:           item.Body(),
 			LikelyCategory: "",
-			Categories:     map[Class]Category{},
+			Categories:     map[bayesian.Class]Category{},
 		}
 
 		if classified > 5 {

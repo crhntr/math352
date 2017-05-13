@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"sync"
 
-	. "github.com/crhntr/bayesian"
 	. "github.com/crhntr/math352/internal"
 	"github.com/gin-gonic/gin"
+	"github.com/jbrukh/bayesian"
 )
 
 const staticDirectoryPath = "static/"
@@ -15,7 +15,7 @@ const staticDirectoryPath = "static/"
 var (
 	verbose bool
 
-	classifier      *Classifier
+	classifier      *bayesian.Classifier
 	classifierMutex = &sync.Mutex{}
 	classified      = 0
 
@@ -26,7 +26,7 @@ var (
 	index    int = 0
 	fetched      = false
 
-	defaultClasses = []Class{"relevant", "irrelevent"}
+	defaultClasses = []bayesian.Class{"relevant", "irrelevent"}
 )
 
 func init() {
@@ -36,7 +36,7 @@ func init() {
 func main() {
 	startCleanupJob()
 
-	classifier = NewClassifier(defaultClasses...)
+	classifier = bayesian.NewClassifier(defaultClasses...)
 	router := gin.Default()
 
 	router.StaticFile("/", staticDirectoryPath+"index.html")
@@ -51,7 +51,7 @@ func main() {
 	})
 	router.GET("/api/class/:name", func(c *gin.Context) {
 		name := c.Param("name")
-		c.JSON(200, classifier.WordsByClass(Class(name)))
+		c.JSON(200, classifier.WordsByClass(bayesian.Class(name)))
 	})
 
 	router.PATCH("/api/item/:id/classes", patchItemClasses)
