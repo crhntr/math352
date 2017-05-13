@@ -5,7 +5,7 @@ module.exports = {
     context: __dirname,
 
     entry: {
-        main: './main',
+        main: './frontend/main',
     },
 
     output: {
