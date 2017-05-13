@@ -1,22 +1,22 @@
 <template>
 	<div>
+		<h1>Math352: Class Project</h1>
 		<div class="page">
-			<h1>About Naive Bayes Classification</h1>
-			  <p>During lecture we discussed Bayes' theorem, which describes the probability of an event based on some previous knowledge called the prior probability. Baysian Naive Classification is an algorithm in machine learning that uses Bayes' theorem to classify text, or sub-objects made up of sub objects. When categorizing text the sub-objects are words. The probability that a block of text is in a category is based on what words it contains and how many of each kind.</p>
-				<p>
-					<em>For a more detailed explanation of Baysian Naive Classification see: https://en.wikipedia.org/wiki/Naive_Bayes_classifier.</em>
-				</p>
-				<p>The following classifier pulls Abstracts and Titles from the PubMed api. The abstract and title (article) are displayed to the user and the user assigns the article to a category. The algorithm then learns based on the categories given. When the articles are refreshed the user should see the probabilities that an article is in a category next to the name of a category for each article.</p>
-				<p>Although the program is relatively fast and efficient it is not too good at actually categorizing articles. However, I only manually categorized a few dozen articles in my tests. I will continue to work on a better application that allows for longer term data collection (this site drops all the data every so often) and takes into account where the words are (title, abstract…).</p>
-				<p>In machine learning, naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.</p>
+			<h2>Introduction</h2>
+		  <p>During lecture we discussed Bayes' theorem, which describes the probability of an event based on some previous knowledge called the prior probability. Baysian Naive Classification is an algorithm in machine learning that uses Bayes' theorem to classify text, or sub-objects made up of sub objects. When categorizing text the sub-objects are words. The probability that a block of text is in a category is based on what words it contains and how many of each kind.</p>
+			<p>
+				<em>For a more detailed explanation of Baysian Naive Classification see: https://en.wikipedia.org/wiki/Naive_Bayes_classifier.</em>
+			</p>
+			<p>The following classifier pulls Abstracts and Titles from the PubMed api. The abstract and title (article) are displayed to the user and the user assigns the article to a category. The algorithm then learns based on the categories given. When the articles are refreshed the user should see the probabilities that an article is in a category next to the name of a category for each article.</p>
+			<p>Although the program is relatively fast and efficient it is not too good at actually categorizing articles. However, I only manually categorized a few dozen articles in my tests. I will continue to work on a better application that allows for longer term data collection (this site drops all the data every so often) and takes into account where the words are (title, abstract…).</p>
+			<p>In machine learning, naive Bayes classifiers are a family of simple probabilistic classifiers based on applying Bayes' theorem with strong (naive) independence assumptions between the features.</p>
 			<div height="100vh">
 				<img src="/src/theorem.png" height="100px"/>
 			</div>
 		</div>
 		<div class="page">
 			<h1>STEP 1: Load Data From PubMed</h1>
-			<p>
-				This step request articles from PubMed using a pubmed query ({{query}}). The pubmed api simply searches a database of articles by date added. The goal of this project is to filter these using a machine learning algorithm based on Naive Bayes classification.
+			<p>This step request articles from PubMed using a pubmed query ({{query}}). The pubmed api simply searches a database of articles by date added. The goal of this project is to filter these using a machine learning algorithm based on Naive Bayes classification.
 			</p>
 			<button @click="fetch()" v-if="show_fetch">Fetch</button>
 			<button @click="updateItems()" v-if="!show_fetch">Update Items</button>
