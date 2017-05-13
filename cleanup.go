@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/crhntr/math352/internal"
+	. "github.com/crhntr/math352/internal"
 )
 
 var (
@@ -42,6 +42,6 @@ func cleanupItems() {
 	defer itemsMut.Unlock()
 	if len(items) > 0 {
 		log.Printf("cleaning up items (%d items removed)", len(items))
-		items = []internal.Item{}
+		items = []Item{}
 	}
 }
