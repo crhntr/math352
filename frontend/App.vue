@@ -14,22 +14,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="page">
+		<div class="page classifier">
 			<h2>STEP 2: Classify Articles</h2>
-			<article >
+			<article>
 				<h2>{{item.data.title}}</h2>
 				<p>{{item.data.body}}</p>
 			</article>
-			<div>
+			<div class="widget">
 				<div v-for="(score, cat) in item.data.categories">
 					<input type="checkbox" :value="cat" :id="cat" v-model="item.categories">
 					<label :for="cat">{{cat}}</label>
 				</div>
 				<input type="text" @keyup.enter="categories.push(newCategory)" v-model="newCategory" placeholder="Category"/>
+				<br />
 				<button @click="submitClasses(); next(); set_default_categories()">Next</button>
 			</div>
 		</div>
-		<div>
+		<div class="page">
 			<a href="http://github.com/crhntr/math352">Source code (github)</a>
 		</div>
 	</div>

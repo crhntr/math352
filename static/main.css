@@ -16,3 +16,13 @@
 	padding: 10px;
 	background-color: #eee;
 }
+
+.classifier article {
+  width: 60%;
+  float: left;
+}
+
+.classifier .widget {
+  width: 40%;
+  float: right;
+}
