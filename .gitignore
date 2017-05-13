@@ -1,5 +1,6 @@
 node_modules
-static/vendorg
+static/vendor
+vendor
 static/bundles/*
 server
 
