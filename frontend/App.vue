@@ -76,13 +76,11 @@
 							item.categories['relevant'] = 0
 							item.categories['irrelevant'] = 0
 						}
-						console.log(item)
-						let item_wrapper = {
+						this.items.push({
 							show_body: false,
 							data: item,
 							categories: []
-						}
-						this.items.push(item_wrapper)
+						})
 					}
 				}, response => {
 					console.log(response)
