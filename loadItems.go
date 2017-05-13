@@ -7,9 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/gin-gonic/gin"
-
 	. "github.com/crhntr/math352/pubmed"
+	"github.com/gin-gonic/gin"
 )
 
 func fetch(c *gin.Context) {
