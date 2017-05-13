@@ -15,7 +15,6 @@
   "version": "1.0.0",
   "scripts": {
     "build": "./node_modules/.bin/webpack --config webpack.config.js",
-    "dokku-predeploy": "./node_modules/.bin/webpack --config webpack.config.js",
     "watch": "./node_modules/.bin/webpack --config webpack.config.js --watch"
   },
   "dependencies": {

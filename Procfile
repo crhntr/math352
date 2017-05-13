@@ -1,1 +1,1 @@
-web: npm run build && math352
+web: math352
