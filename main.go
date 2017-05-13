@@ -43,7 +43,6 @@ func main() {
 	router.StaticFS("/src/", http.Dir(staticDirectoryPath))
 	// router.GET("/api/feed/:id/items", setDB, getFeedItemsHandler) // with optional params: year, month day
 
-	router.GET("/act/item/next", nextItem)
 	router.POST("/act/item/fetch", fetch)
 
 	router.GET("/api/class", func(c *gin.Context) {

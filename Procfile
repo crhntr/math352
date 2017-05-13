@@ -1,1 +1,1 @@
-web: server
+web: math352

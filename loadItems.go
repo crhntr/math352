@@ -8,7 +8,6 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"gopkg.in/mgo.v2/bson"
 
 	. "github.com/crhntr/math352/pubmed"
 )
@@ -41,7 +40,6 @@ func fetch(c *gin.Context) {
 	log.Println(queryString)
 	q := Query{
 		Query: queryString,
-		ID:    bson.NewObjectId(),
 	}
 	log.Printf("Query: %s", q)
 
