@@ -2,6 +2,9 @@
 	"ImportPath": "github.com/crhntr/math352",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/gin-gonic/gin",
