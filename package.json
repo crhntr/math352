@@ -6,7 +6,11 @@
     "url" : "https://github.com/crhntr/math352"
   },
   "version": "0.1.0",
-  "author": "",
+  "author": {
+    "name" : "Christopher Hunter",
+    "email" : "crhuntr.com@gmail.com",
+    "url" : "http://crhntr.com"
+},
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
