@@ -1,6 +1,7 @@
 node_modules
 static/vendor
-vendor
+vendor/*
+!vendor/vendor.json
 static/bundles/*
 server
 
