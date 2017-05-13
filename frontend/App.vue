@@ -39,6 +39,9 @@
 				<button @click="submitClasses(); next(); set_default_categories()">Next</button>
 			</div>
 		</div>
+		<div>
+			<a href="http://github.com/crhntr/math352">Source code (github)</a>
+		</div>
 	</div>
 </template>
 <script>
