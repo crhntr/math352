@@ -13,7 +13,7 @@ static/bundles/main.js: $(wildcard frontend/*)
 backend: server
 
 server: $(wildcard backend/*.go)
-	cd backend && go build -o ../server
+	go build -o server
 
 clean:
 	-rm server
