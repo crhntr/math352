@@ -24,6 +24,8 @@ var (
 	indexMut *sync.Mutex
 	index    int = 0
 	fetched      = false
+
+	defaultClasses = []Class{"relevant", "irrelevent"}
 )
 
 func init() {
@@ -36,7 +38,7 @@ func main() {
 
 	startCleanupJob()
 
-	classifier = NewClassifier("relevant", "irrelevent")
+	classifier = NewClassifier(defaultClasses...)
 	classifierMutex = &sync.Mutex{}
 	router := gin.Default()
 

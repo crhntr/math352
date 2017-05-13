@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 
 	. "github.com/crhntr/bayesian"
@@ -28,18 +29,26 @@ func getItems(c *gin.Context) {
 
 	for i, item := range items {
 		ir := ItemRecord{
-			ID:         strconv.Itoa(i),
-			Title:      item.Title(),
-			Link:       fmt.Sprintf("/api/item/%d", i),
-			Body:       item.Body(),
-			Categories: map[Class]float64{},
+			ID:             strconv.Itoa(i),
+			Title:          item.Title(),
+			Link:           fmt.Sprintf("/api/item/%d", i),
+			Body:           item.Body(),
+			LikelyCategory: "",
+			Categories:     map[Class]float64{},
 		}
 
-		scores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
+		if classifier.Learned() > 0 {
+			log.Print("here")
+			scores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
 
-		ir.LikelyCategory = classifier.Classes[likely]
-		for i, class := range classifier.Classes {
-			ir.Categories[class] = scores[i]
+			ir.LikelyCategory = classifier.Classes[likely]
+			for i, class := range classifier.Classes {
+				ir.Categories[class] = scores[i]
+			}
+		} else {
+			for _, dclass := range defaultClasses {
+				ir.Categories[dclass] = 0.0
+			}
 		}
 
 		itemRecords = append(itemRecords, ir)
