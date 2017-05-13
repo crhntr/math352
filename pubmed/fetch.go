@@ -6,19 +6,19 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/crhntr/math352/internal"
+
 	"net/http"
 	"net/url"
 	"strings"
-
-	. "github.com/crhntr/math352/internal"
 )
 
 const dateFmt = "2006/01/02"
 
-func (q Query) FetchItemsForDay(d time.Time) ([]Item, error) {
+func (q Query) FetchItemsForDay(d time.Time) ([]internal.Item, error) {
 	day := time.Date(d.Year(), d.Month(), d.Day(), 0, 0, 0, 0, d.Location())
 	var (
-		items          = []Item{}
+		items          = []internal.Item{}
 		eSearchResults = ESearchResult{}
 		query          = q.Query
 	)

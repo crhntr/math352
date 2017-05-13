@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"strconv"
 
-	. "github.com/crhntr/math352/internal"
 	"github.com/gin-gonic/gin"
 	"github.com/jbrukh/bayesian"
 )
