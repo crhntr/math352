@@ -1,9 +1,15 @@
+body, html{
+  margin: 0;
+}
 .page{
   width: 720px;
   max-width: calc(100vw-20px);
   margin: 0 auto;
   padding: 10px;
-  min-height:50vh;
+  min-height:100vh;
+}
+.page-container:nth-child(even){
+  background-color: #CCC
 }
 .article h3{
 	font-size: 14px;
@@ -16,7 +22,6 @@
 	padding: 10px;
 	background-color: #eee;
 }
-
 .classifier article {
   width: 60%;
   float: left;
