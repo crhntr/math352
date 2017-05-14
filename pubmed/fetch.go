@@ -64,7 +64,7 @@ func (q Query) FetchItemsForDay(d time.Time) ([]Item, error) {
 	}
 
 	for _, article := range articlesSet.Articles {
-		items = append(items, article)
+		items = append(items, &article)
 	}
 
 	return items, err
