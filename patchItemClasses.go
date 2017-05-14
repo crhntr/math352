@@ -20,6 +20,13 @@ func patchItemClasses(c *gin.Context) {
 		})
 		return
 	}
+	itemsMut.Lock()
+	if id > len(items) || id < 0 {
+		c.JSON(404, gin.H{
+			"error": "item with id not found: " + err.Error(),
+		})
+	}
+	defer itemsMut.Unlock()
 
 	data := Data{}
 	if err = c.BindJSON(&data); err != nil {
