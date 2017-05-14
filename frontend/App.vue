@@ -29,9 +29,6 @@
 				<button @click="submitClasses(); next(); set_default_categories()">Next</button>
 			</div>
 		</div>
-		<div class="page">
-			<a href="http://github.com/crhntr/math352">Source code (github)</a>
-		</div>
 	</div>
 </template>
 <script>
@@ -43,14 +40,13 @@
 	      newCategory: '',
 				categories: [],
 				items: [],
-				fetching: false,
-				show_fetch: true,
 				current_item_id: 0,
 				show_score: 0,
 	      item: {
 	        data: {},
 					id: 0,
 	      },
+				updating: false,
 				query: "talimogene laherparepvec [All Fields]"
 	    }
 	  },
@@ -64,6 +60,7 @@
 				}
 			},
 			getItems() {
+				this.updating = true;
 				this.$http.get("/api/items").then(response => {
 					this.items = []
 					for (let item of response.data.data) {
@@ -81,8 +78,10 @@
 					}
 					this.current_item_id = 0;
 					this.item = this.items[this.current_item_id]
+					this.updating = false
 				}, response => {
 					console.log(response)
+					this.updating = false
 				})
 			},
  	    next() {
