@@ -35,6 +35,8 @@ func init() {
 
 func main() {
 	// startCleanupJob()
+	loadData(365)
+	startLoadDataJob()
 
 	classifier = bayesian.NewClassifier(defaultClasses...)
 	router := gin.Default()
@@ -43,7 +45,7 @@ func main() {
 	router.StaticFS("/src/", http.Dir(staticDirectoryPath))
 	// router.GET("/api/feed/:id/items", setDB, getFeedItemsHandler) // with optional params: year, month day
 
-	router.POST("/act/item/fetch", fetch)
+	// router.POST("/act/item/fetch", fetch)
 
 	router.GET("/api/class", func(c *gin.Context) {
 		c.JSON(200, gin.H{"classes": classifier.Classes})

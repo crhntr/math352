@@ -18,18 +18,16 @@ var (
 	lastFetched    time.Time
 )
 
+var cooldown = 5 * time.Minute
+
 func fetch(c *gin.Context) {
-	if fetched {
-		func() {
-			lastFetchedMut.Lock()
-			defer lastFetchedMut.Unlock()
-			since := time.Since(lastFetched)
-			if since < 5*time.Minute {
-				c.JSON(http.StatusLocked, gin.H{
-					"error": fmt.Sprintf("fetch disabled for a while (it will be unlocked in %f minutes)", since.Minutes()),
-				})
-			}
-		}()
+	lastFetchedMut.Lock()
+	since := time.Since(lastFetched)
+	if since < cooldown {
+		c.JSON(http.StatusLocked, gin.H{
+			"error": fmt.Sprintf("fetch disabled for a while (it will be unlocked in less than %d minutes)", int64(cooldown.Minutes())-int64(time.Since(lastFetched).Minutes())),
+		})
+		return
 		// if forced := c.Query("force"); forced != "true" {
 		// 	c.JSON(http.StatusLocked, gin.H{
 		// 		"error": "fetch disabled for a while (after an hour of no use it will be available again)",
@@ -39,12 +37,10 @@ func fetch(c *gin.Context) {
 		// 	log.Print("FORCED fetch started")
 		// 	cleanupItems()
 		// }
-	}
-	func() {
-		lastFetchedMut.Lock()
-		defer lastFetchedMut.Unlock()
+	} else {
 		lastFetched = time.Now()
-	}()
+	}
+	lastFetchedMut.Unlock()
 	fetched = true
 
 	daysParam := c.Query("days")
@@ -75,7 +71,7 @@ func fetch(c *gin.Context) {
 	nDaysAgo := time.Now().Add(-1 * time.Duration(days) * 24 * time.Hour)
 	log.Printf("nDaysAgo: %s", nDaysAgo)
 
-	func() {
+	go func() {
 		timeIter := time.Now()
 		for timeIter.After(nDaysAgo) {
 			nItems, err := q.FetchItemsForDay(timeIter)
@@ -97,7 +93,6 @@ func fetch(c *gin.Context) {
 		}
 
 		log.Printf("len(item)= %d", len(items))
-		time.Sleep(5 * time.Second)
+		c.Status(http.StatusAccepted)
 	}()
-	c.Status(http.StatusAccepted)
 }
