@@ -17,6 +17,8 @@ type Article struct {
 	Name         xml.Name `xml:"PubmedArticle" json:"-" bson:"-"`
 	ArticleTitle string   `xml:"MedlineCitation>Article>ArticleTitle" json:"title" bson:"title"`
 	AbstractText string   `xml:"MedlineCitation>Article>Abstract>AbstractText" json:"abstract" bson:"abstract-"`
+	done         bool
+	readIndex    int
 }
 
 type ESearchResult struct {

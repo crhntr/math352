@@ -2,6 +2,7 @@ package pubmed
 
 import (
 	"errors"
+	"io"
 	"time"
 )
 
@@ -27,4 +28,19 @@ func (article Article) Validate() error {
 		return errors.New("article missing abstract")
 	}
 	return nil
+}
+
+func (article *Article) Read(p []byte) (n int, err error) {
+	if article.done {
+		return 0, io.EOF
+	}
+	read := []byte(article.ArticleTitle + article.AbstractText)[article.readIndex:]
+	n = copy(p, read)
+	article.readIndex += n
+	return
+}
+
+func (article *Article) ResetReader() {
+	article.done = false
+	article.readIndex = 0
 }
