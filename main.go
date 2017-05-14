@@ -35,8 +35,13 @@ func init() {
 
 func main() {
 	// startCleanupJob()
-	loadData(365)
-	startLoadDataJob()
+	loadData(30)
+
+	endLoadDataJob := make(chan struct{})
+	startLoadDataJob(endLoadDataJob)
+	// time.AfterFunc(30*time.Second, func() {
+	// 	endLoadDataJob <- struct{}{}
+	// })
 
 	classifier = bayesian.NewClassifier(defaultClasses...)
 	router := gin.Default()
