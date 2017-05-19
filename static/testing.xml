@@ -1,0 +1,1856 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28445579</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2168-6084</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Apr</Month>
+                        <Day>26</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>JAMA dermatology</Title>
+                <ISOAbbreviation>JAMA Dermatol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Complete Response of Advanced Melanoma Treated With Talimogene Laherparepvec and Subsequent Sweet's-Like Infiltrate.</ArticleTitle>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1001/jamadermatol.2017.0466</ELocationID>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Parekh</LastName>
+                    <ForeName>Vishwas</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Dermatology, Hospital of the University of Pennsylvania.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gangadhar</LastName>
+                    <ForeName>Tara</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medicine, Hospital of the University of Pennsylvania, Philadelphia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kreider</LastName>
+                    <ForeName>Kristin L</ForeName>
+                    <Initials>KL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medicine, Hospital of the University of Pennsylvania, Philadelphia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Elenitsas</LastName>
+                    <ForeName>Rosalie</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Dermatology, Hospital of the University of Pennsylvania.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chu</LastName>
+                    <ForeName>Emily Y</ForeName>
+                    <Initials>EY</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Dermatology, Hospital of the University of Pennsylvania.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>JAMA Dermatol</MedlineTA>
+            <NlmUniqueID>101589530</NlmUniqueID>
+            <ISSNLinking>2168-6068</ISSNLinking>
+        </MedlineJournalInfo>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28445579</ArticleId>
+            <ArticleId IdType="pii">2622086</ArticleId>
+            <ArticleId IdType="doi">10.1001/jamadermatol.2017.0466</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">28443305</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>30</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>3</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>JAAD case reports</Title>
+                <ISOAbbreviation>JAAD Case Rep</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Talimogene laherparepvec for regionally advanced Merkel cell carcinoma: A report of 2 cases.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>185-189</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.jdcr.2017.02.003</ELocationID>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Blackmon</LastName>
+                    <ForeName>Jonathan T</ForeName>
+                    <Initials>JT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Covenant College, Lookout Mountain, Georgia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dhawan</LastName>
+                    <ForeName>Ratika</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Comprehensive Cancer Center, University of Alabama at Birmingham, Birmingham, Alabama.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Viator</LastName>
+                    <ForeName>Toni M</ForeName>
+                    <Initials>TM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Comprehensive Cancer Center, University of Alabama at Birmingham, Birmingham, Alabama.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Terry</LastName>
+                    <ForeName>Nina L</ForeName>
+                    <Initials>NL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>General Radiology and Cardiopulmonary Section, Department of Radiology, UAB Medicine, Birmingham, Alabama.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Conry</LastName>
+                    <ForeName>Robert M</ForeName>
+                    <Initials>RM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Hematology Oncology, University of Alabama at Birmingham, Birmingham, Alabama.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>14</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>JAAD Case Rep</MedlineTA>
+            <NlmUniqueID>101665210</NlmUniqueID>
+            <ISSNLinking>2352-5126</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Invest Dermatol. 2013 Apr;133(4):936-45</RefSource>
+                <PMID Version="1">23223137</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cutan Med Surg. 2000 Oct;4(4):186-95</RefSource>
+                <PMID Version="1">11231196</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2008 Feb 22;319(5866):1096-100</RefSource>
+                <PMID Version="1">18202256</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>N Engl J Med. 2016 Jun 30;374(26):2542-52</RefSource>
+                <PMID Version="1">27093365</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Clin Dermatol. 2017 Feb;18(1):1-15</RefSource>
+                <PMID Version="1">27988837</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Oncol. 2016 Aug 1;34(22):2619-26</RefSource>
+                <PMID Version="1">27298410</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Immunother Cancer. 2016 Mar 15;4:12</RefSource>
+                <PMID Version="1">26981242</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Invest Dermatol. 2015 May;135(5):1221-4</RefSource>
+                <PMID Version="1">25882464</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AIDS Patient Care STDS. 2007 Jul;21(7):447-51</RefSource>
+                <PMID Version="1">17651025</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell Host Microbe. 2010 Jun 25;7(6):509-15</RefSource>
+                <PMID Version="1">20542254</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet Oncol. 2016 Oct;17 (10 ):1374-1385</RefSource>
+                <PMID Version="1">27592805</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Oncol. 2015 Sep 1;33(25):2780-8</RefSource>
+                <PMID Version="1">26014293</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Res. 2015 Dec 15;75(24):5228-34</RefSource>
+                <PMID Version="1">26627015</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Pathol. 2009 May;218(1):48-56</RefSource>
+                <PMID Version="1">19291712</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Natl Cancer Inst. 2015 Jan 08;107(2):null</RefSource>
+                <PMID Version="1">25575645</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am Soc Clin Oncol Educ Book. 2015;:e519-26</RefSource>
+                <PMID Version="1">25993218</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Pathol. 2015 Mar;46(3):443-53</RefSource>
+                <PMID Version="1">25623078</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Natl Compr Canc Netw. 2009 Mar;7(3):333-9</RefSource>
+                <PMID Version="1">19401065</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Dermatol. 1993 Aug;29(2 Pt 1):143-56</RefSource>
+                <PMID Version="1">8335732</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Oncol. 2011 Feb;22(2):250-6</RefSource>
+                <PMID Version="1">20587511</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Res. 2015 Sep 15;75(18):3720-7</RefSource>
+                <PMID Version="1">26238782</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Skin Cancer. 2012;2012:680410</RefSource>
+                <PMID Version="1">23304516</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cutan Pathol. 2010 Jan;37(1):20-7</RefSource>
+                <PMID Version="1">19638070</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Dermatol. 2015 Jul;173(1):42-9</RefSource>
+                <PMID Version="1">25919492</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">MCC, Merkel cell carcinoma</Keyword>
+            <Keyword MajorTopicYN="N">MCPyV, Merkel cell polyomavirus</Keyword>
+            <Keyword MajorTopicYN="N">Merkel cell carcinoma</Keyword>
+            <Keyword MajorTopicYN="N">PD, programmed death</Keyword>
+            <Keyword MajorTopicYN="N">PET/CT, position emission tomography/computed tomography</Keyword>
+            <Keyword MajorTopicYN="N">TVEC, talimogene laherparepvec</Keyword>
+            <Keyword MajorTopicYN="N">UV, ultraviolet</Keyword>
+            <Keyword MajorTopicYN="N">clinical response</Keyword>
+            <Keyword MajorTopicYN="N">oncolytic viral immunotherapy</Keyword>
+            <Keyword MajorTopicYN="N">talimogene laherparepvec</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28443305</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.jdcr.2017.02.003</ArticleId>
+            <ArticleId IdType="pii">S2352-5126(17)30036-X</ArticleId>
+            <ArticleId IdType="pmc">PMC5394182</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28428211</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>21</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>21</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1936-959X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Apr</Month>
+                        <Day>20</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>AJNR. American journal of neuroradiology</Title>
+                <ISOAbbreviation>AJNR Am J Neuroradiol</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Imaging Manifestations of Pseudoprogression in Metastatic Melanoma Nodes Injected with Talimogene Laherparepvec: Initial Experience.</ArticleTitle>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3174/ajnr.A5206</ELocationID>
+            <Abstract>
+                <AbstractText>Talimogene laherparepvec is an oncolytic virus recently approved for targeted treatment of advanced melanoma. Because of an inflammatory reaction, treated lesions may increase in size and develop infiltrative margins that can be construed as disease progression or extracapsular spread. In this report, we describe our initial experience imaging the response of metastatic nodes injected with talimogene laherparepvec. Six of 12 nodes (50%) showed growth from baseline followed by decreased size, 5 of 12 nodes (42%) showed a downward size trend, and 1 node showed continued increase in size. Seven of 9 nodes (78%) developed infiltrative margins at a median of 79 days, and 6 of 9 (67%) nodes became necrotic at a median of 76 days after injection, all showing decreased size at final follow-up. An increase in the size of nodes injected with talimogene laherparepvec does not necessarily indicate progression. Infiltrative margins are also frequently seen and may be confused with extracapsular disease.</AbstractText>
+                <CopyrightInformation>© 2017 American Society of Neuroradiology.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zamora</LastName>
+                    <ForeName>C</ForeName>
+                    <Initials>C</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-8532-9646</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>From the Division of Neuroradiology, Department of Radiology (C.Z., M.L., M.C.) and the Division of Hematology and Oncology, Department of Medicine (F. Cunningham, F. Collichio), University of North Carolina School of Medicine, Chapel Hill, North Carolina. carlos_zamora@med.unc.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lopez</LastName>
+                    <ForeName>M</ForeName>
+                    <Initials>M</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-2247-9660</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>From the Division of Neuroradiology, Department of Radiology (C.Z., M.L., M.C.) and the Division of Hematology and Oncology, Department of Medicine (F. Cunningham, F. Collichio), University of North Carolina School of Medicine, Chapel Hill, North Carolina.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cunningham</LastName>
+                    <ForeName>F</ForeName>
+                    <Initials>F</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-8776-6946</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>From the Division of Neuroradiology, Department of Radiology (C.Z., M.L., M.C.) and the Division of Hematology and Oncology, Department of Medicine (F. Cunningham, F. Collichio), University of North Carolina School of Medicine, Chapel Hill, North Carolina.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Collichio</LastName>
+                    <ForeName>F</ForeName>
+                    <Initials>F</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0001-9807-4240</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>From the Division of Neuroradiology, Department of Radiology (C.Z., M.L., M.C.) and the Division of Hematology and Oncology, Department of Medicine (F. Cunningham, F. Collichio), University of North Carolina School of Medicine, Chapel Hill, North Carolina.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Castillo</LastName>
+                    <ForeName>M</ForeName>
+                    <Initials>M</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0003-2960-1064</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>From the Division of Neuroradiology, Department of Radiology (C.Z., M.L., M.C.) and the Division of Hematology and Oncology, Department of Medicine (F. Cunningham, F. Collichio), University of North Carolina School of Medicine, Chapel Hill, North Carolina.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>20</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>AJNR Am J Neuroradiol</MedlineTA>
+            <NlmUniqueID>8003708</NlmUniqueID>
+            <ISSNLinking>0195-6108</ISSNLinking>
+        </MedlineJournalInfo>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>22</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28428211</ArticleId>
+            <ArticleId IdType="pii">ajnr.A5206</ArticleId>
+            <ArticleId IdType="doi">10.3174/ajnr.A5206</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">28392162</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>10</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>07</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1525-0024</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>25</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>May</Month>
+                        <Day>03</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Molecular therapy : the journal of the American Society of Gene Therapy</Title>
+                <ISOAbbreviation>Mol. Ther.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Oncolytic Virotherapy: A Contest between Apples and Oranges.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1107-1116</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S1525-0016(17)30125-9</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.ymthe.2017.03.026</ELocationID>
+            <Abstract>
+                <AbstractText>Viruses can be engineered or adapted for selective propagation in neoplastic tissues and further modified for therapeutic transgene expression to enhance their antitumor potency and druggability. Oncolytic viruses (OVs) can be administered locally or intravenously and spread to a variable degree at sites of tumor growth. OV-infected tumor cells die in situ, releasing viral and tumor antigens that are phagocytosed by macrophages, transported to regional lymph nodes, and presented to antigen-reactive T cells, which proliferate before dispersing to kill uninfected tumor cells at distant sites. Several OVs are showing clinical promise, and one of them, talimogene laherparepvec (T-VEC), was recently granted marketing approval for intratumoral therapy of nonresectable metastatic melanoma. T-VEC also appears to substantially enhance clinical responsiveness to checkpoint inhibitor antibody therapy. Here, we examine the T-VEC paradigm and review some of the approaches currently being pursued to develop the next generation of OVs for both local and systemic administration, as well as for use in combination with other immunomodulatory agents.</AbstractText>
+                <CopyrightInformation>Copyright © 2017 The American Society of Gene and Cell Therapy. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Russell</LastName>
+                    <ForeName>Stephen J</ForeName>
+                    <Initials>SJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Molecular Medicine, Mayo Clinic, Rochester, MN 55905, USA. Electronic address: sjr@mayo.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Peng</LastName>
+                    <ForeName>Kah-Whye</ForeName>
+                    <Initials>KW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Molecular Medicine, Mayo Clinic, Rochester, MN 55905, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>06</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Mol Ther</MedlineTA>
+            <NlmUniqueID>100890581</NlmUniqueID>
+            <ISSNLinking>1525-0016</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Lett. 2001 Oct 22;172(1):27-36</RefSource>
+                <PMID Version="1">11595126</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Infect Dis. 2002 Apr 15;185(8):1019-24</RefSource>
+                <PMID Version="1">11930310</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Gene Ther Clin Dev. 2013 Dec;24(4):174-81</RefSource>
+                <PMID Version="1">24219832</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Gene Ther. 2013 Mar;20(3):255-61</RefSource>
+                <PMID Version="1">22476202</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Res. 2012 Sep 15;72(18):4753-64</RefSource>
+                <PMID Version="1">22836753</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2012 Feb;20(2):287-97</RefSource>
+                <PMID Version="1">22031239</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Rev Med Virol. 2005 Nov-Dec;15(6):407-18; discussion 418-21</RefSource>
+                <PMID Version="1">16211552</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Pathog. 2014 Jan;10(1):e1003836</RefSource>
+                <PMID Version="1">24453963</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Immunother Cancer. 2016 Sep 20;4:53</RefSource>
+                <PMID Version="1">27660707</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioengineered. 2013 Mar-Apr;4(2):84-9</RefSource>
+                <PMID Version="1">23093804</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer. 1949 May;2(3):525-34</RefSource>
+                <PMID Version="1">18131412</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Oncol. 2016 Jul 21;:null</RefSource>
+                <PMID Version="1">27441411</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Methods Mol Biol. 2011;737:345-66</RefSource>
+                <PMID Version="1">21590404</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Transl Med. 2013 Jan 24;11:20</RefSource>
+                <PMID Version="1">23347343</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuro Oncol. 2011 Jan;13(1):14-27</RefSource>
+                <PMID Version="1">21075780</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Surg Oncol. 2010 Mar;17(3):718-30</RefSource>
+                <PMID Version="1">19915919</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Pathog. 2010 Mar 19;6(3):e1000820</RefSource>
+                <PMID Version="1">20333250</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Clin Dermatol. 2017 Feb;18(1):1-15</RefSource>
+                <PMID Version="1">27988837</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Methods Mol Biol. 2009;542:551-64</RefSource>
+                <PMID Version="1">19565922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Res. 2001 Dec 15;61(24):8751-7</RefSource>
+                <PMID Version="1">11751395</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Biotechnol. 2012 Jul 10;30(7):658-70</RefSource>
+                <PMID Version="1">22781695</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Oncol. 2016 Aug 1;34(22):2619-26</RefSource>
+                <PMID Version="1">27298410</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Future Virol. 2011 Sep;6(9):1045-1058</RefSource>
+                <PMID Version="1">21984883</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Transl Med. 2016 Jun 1;8(341):341ra75</RefSource>
+                <PMID Version="1">27252174</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Adv Drug Deliv Rev. 2009 Jul 2;61(7-8):554-71</RefSource>
+                <PMID Version="1">19394376</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Cancer. 2012 Mar 21;12:99</RefSource>
+                <PMID Version="1">22436661</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Med. 2008 Nov;14(11):1278-83</RefSource>
+                <PMID Version="1">18953352</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2000 Oct;2(4):387-93</RefSource>
+                <PMID Version="1">11020355</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Expert Opin Biol Ther. 2004 Oct;4(10 ):1685-92</RefSource>
+                <PMID Version="1">15461580</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Expert Opin Biol Ther. 2009 Sep;9(9):1163-76</RefSource>
+                <PMID Version="1">19637971</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther Oncolytics. 2014 Dec 10;1:14005</RefSource>
+                <PMID Version="1">27119095</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Gene Ther. 2003 Feb;10(4):292-303</RefSource>
+                <PMID Version="1">12595888</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Cancer Drug Targets. 2007 Mar;7(2):141-8</RefSource>
+                <PMID Version="1">17346105</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Virol. 2009 Mar;83(5):2130-9</RefSource>
+                <PMID Version="1">19073718</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Infect Dis. 2002 Oct 15;186 Suppl 1:S3-28</RefSource>
+                <PMID Version="1">12353183</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2011 May;19(5):886-94</RefSource>
+                <PMID Version="1">21364541</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Virol. 2015 Aug;13:40-8</RefSource>
+                <PMID Version="1">25863717</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Gene Ther. 2011 Nov;22(11):1343-53</RefSource>
+                <PMID Version="1">21366404</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2010 Jun;18(6):1123-1129</RefSource>
+                <PMID Version="1">28178494</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Semin Oncol. 2005 Dec;32(6):537-48</RefSource>
+                <PMID Version="1">16338419</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2008 Sep 30;105(39):14981-6</RefSource>
+                <PMID Version="1">18815361</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Blood. 2016 Mar 17;127(11):1449-58</RefSource>
+                <PMID Version="1">26712908</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Cancer Res. 2008 Jan 1;14(1):259-69</RefSource>
+                <PMID Version="1">18172278</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Mol Med (Berl). 2016 Sep;94(9):979-91</RefSource>
+                <PMID Version="1">27492706</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Oncol. 2017 Jan 1;28(1):57-74</RefSource>
+                <PMID Version="1">28177433</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Exp Hematol. 2013 Jun;41(6):508-17</RefSource>
+                <PMID Version="1">23403007</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Pathog. 2016 Mar 10;12(3):e1005449</RefSource>
+                <PMID Version="1">26964062</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Oncol. 2015 Sep 1;33(25):2780-8</RefSource>
+                <PMID Version="1">26014293</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Cancer. 2016 Feb 16;114(4):357-61</RefSource>
+                <PMID Version="1">26766734</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Gene Ther. 2005 Jun;16(6):765-78</RefSource>
+                <PMID Version="1">15960607</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ai Zheng. 2004 Dec;23(12):1666-70</RefSource>
+                <PMID Version="1">15601557</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2014 Nov 27;515(7528):572-6</RefSource>
+                <PMID Version="1">25428506</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Cancer Res. 2011 May 1;17(9):2767-76</RefSource>
+                <PMID Version="1">21389099</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Vet J. 1999 May;157(3):239-60</RefSource>
+                <PMID Version="1">10328837</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Expert Opin Biol Ther. 2016;16(1):15-32</RefSource>
+                <PMID Version="1">26457362</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1991 May 10;252(5007):854-6</RefSource>
+                <PMID Version="1">1851332</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Pharm Biotechnol. 2012 Jul;13(9):1842-51</RefSource>
+                <PMID Version="1">21740359</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2007 Jan;15(1):123-30</RefSource>
+                <PMID Version="1">17164783</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Immunol Res. 2015 Jul;3(7):751-63</RefSource>
+                <PMID Version="1">25701327</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mayo Clin Proc. 2014 Jul;89(7):926-33</RefSource>
+                <PMID Version="1">24835528</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Cancer Res. 2003 Jul;9(7):2727-33</RefSource>
+                <PMID Version="1">12855653</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Oncol. 2014 Jul 23;4:191</RefSource>
+                <PMID Version="1">25101247</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Cancer Res. 2009 Aug 15;15(16):5126-35</RefSource>
+                <PMID Version="1">19671871</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Med. 2013 Mar;19(3):329-36</RefSource>
+                <PMID Version="1">23396206</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Res. 2013 Feb 15;73(4):1265-75</RefSource>
+                <PMID Version="1">23393196</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2014 May;22(5):986-98</RefSource>
+                <PMID Version="1">24448161</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Adv Cancer Res. 2012;115:39-67</RefSource>
+                <PMID Version="1">23021241</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Virol. 2016 Mar 28;90(8):4078-92</RefSource>
+                <PMID Version="1">26865716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Vaccine. 2017 Feb 15;35(7):1094-1100</RefSource>
+                <PMID Version="1">27449681</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2015 Jan;23(1):99-107</RefSource>
+                <PMID Version="1">25200130</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurotherapeutics. 2017 Apr;14 (2):333-344</RefSource>
+                <PMID Version="1">28265902</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Cancer Res. 2016 Mar 1;22(5):1048-54</RefSource>
+                <PMID Version="1">26719429</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Rep. 2016 May 26;6:26786</RefSource>
+                <PMID Version="1">27226390</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Virol. 2016 Dec;21:93-101</RefSource>
+                <PMID Version="1">27614209</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Cancer Res. 2009 Dec 1;15(23):7246-55</RefSource>
+                <PMID Version="1">19934299</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2011 Aug 31;477(7362):99-102</RefSource>
+                <PMID Version="1">21886163</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Dev Immunol. 2012;2012:149135</RefSource>
+                <PMID Version="1">23320014</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Vet Clin North Am Small Anim Pract. 2007 Nov;37(6):1023-32; v</RefSource>
+                <PMID Version="1">17950880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2007 Apr;15(4):651-9</RefSource>
+                <PMID Version="1">17299401</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Oncolytic Virother. 2015 Nov 20;4:183-91</RefSource>
+                <PMID Version="1">27512681</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Leukemia. 2012 Aug;26(8):1870-8</RefSource>
+                <PMID Version="1">22425894</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Ther. 2017 Apr 5;25(4):962-975</RefSource>
+                <PMID Version="1">28237836</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Oncol. 2005 Jun;26(6):1471-6</RefSource>
+                <PMID Version="1">15870858</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Pharmacol Ther. 2007 Dec;82(6):700-10</RefSource>
+                <PMID Version="1">17971816</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Gene Ther. 2010 Oct;17(10):1200-5</RefSource>
+                <PMID Version="1">20463757</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Viruses. 2014 May 16;6(5):2122-37</RefSource>
+                <PMID Version="1">24841386</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013 Sep 11;8(9):e73759</RefSource>
+                <PMID Version="1">24040057</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Infect Control. 1982 May;10(2):53-9</RefSource>
+                <PMID Version="1">7044193</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Virol. 2008 Oct;82(20):10153-61</RefSource>
+                <PMID Version="1">18684832</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cold Spring Harb Perspect Med. 2013 Sep 01;3(9):a015487</RefSource>
+                <PMID Version="1">24003247</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cancer Res. 2005 Apr 1;65(7):2832-9</RefSource>
+                <PMID Version="1">15805284</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Pharmacol Sci. 2007 Jul;28(7):326-33</RefSource>
+                <PMID Version="1">17573126</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">T-VEC</Keyword>
+            <Keyword MajorTopicYN="N">competitive landscape</Keyword>
+            <Keyword MajorTopicYN="N">oncolytic virotherapy</Keyword>
+            <Keyword MajorTopicYN="N">viro-immuno-oncology</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>14</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>17</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28392162</ArticleId>
+            <ArticleId IdType="pii">S1525-0016(17)30125-9</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.ymthe.2017.03.026</ArticleId>
+            <ArticleId IdType="pmc">PMC5417845</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28351167</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>29</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>29</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1542-6270</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Mar</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>The Annals of pharmacotherapy</Title>
+                <ISOAbbreviation>Ann Pharmacother</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Talimogene Laherparepvec.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1060028017702654</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1177/1060028017702654</ELocationID>
+            <Abstract>
+                <AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">To review the efficacy and safety of talimogene laherparepvec (T-VEC) as well as its pharmacology, pharmacokinetics, drug-drug interactions, handling procedures, cost considerations, and place in therapy.</AbstractText>
+                <AbstractText Label="DATA SOURCES" NlmCategory="METHODS">Searches of PubMed (1966 to February 2017) and Cochrane Library (1999 to February 2017) were conducted using the terms talimogene laherparepvec, T-VEC, OncoVEX, immunotherapy, melanoma, and oncolytic virus. Additional information was determined from bibliographies, manufacturer product labeling and website, meeting abstracts, Food and Drug Administration website, and clinicaltrials.gov.</AbstractText>
+                <AbstractText Label="STUDY SELECTION AND DATA EXTRACTION" NlmCategory="METHODS">A total of 79 English-language publications were identified. Articles that assessed T-VEC's pharmacokinetics, pharmacodynamics, mechanism, dosing, safety, and efficacy were included as well as narrative reviews that provided practical information.</AbstractText>
+                <AbstractText Label="DATA SYNTHESIS" NlmCategory="RESULTS">Clinical trials have confirmed the safety and efficacy of T-VEC as monotherapy for the treatment of advanced melanoma, with an overall response rate (ORR) of 26%. Relative to granulocyte-macrophage colony-stimulating factor, T-VEC significantly increased durable response rate (DRR; 16.3% vs 2.1%, P &lt; 0.001); however, median overall survival was not improved (23.3 vs 18.9 months, P = 0.051). Phase 1b trials have combined T-VEC and immunotherapies with promising results. T-VEC's adverse effects are generally considered mild to moderate in severity.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">T-VEC is the first approved oncolytic virus for local treatment of unresectable cutaneous, subcutaneous, and nodal lesions in melanoma recurrent after initial surgery. T-VEC improves ORR and DRR as a single agent, shows promise in combination therapy, and is well tolerated. Ongoing trials will determine if T-VEC has a role in early treatment or in combination therapy for melanoma or other malignancies.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Corrigan</LastName>
+                    <ForeName>Patricia A</ForeName>
+                    <Initials>PA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Virginia Commonwealth University Health System/Medical College of Virginia Hospitals, Richmond, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>2 Virginia Commonwealth University School of Pharmacy, Richmond, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Beaulieu</LastName>
+                    <ForeName>Caroline</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Virginia Commonwealth University Health System/Medical College of Virginia Hospitals, Richmond, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Patel</LastName>
+                    <ForeName>Rashmi B</ForeName>
+                    <Initials>RB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Virginia Commonwealth University Health System/Medical College of Virginia Hospitals, Richmond, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lowe</LastName>
+                    <ForeName>Denise K</ForeName>
+                    <Initials>DK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Virginia Commonwealth University Health System/Medical College of Virginia Hospitals, Richmond, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>2 Virginia Commonwealth University School of Pharmacy, Richmond, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>01</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Ann Pharmacother</MedlineTA>
+            <NlmUniqueID>9203131</NlmUniqueID>
+            <ISSNLinking>1060-0280</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">T-VEC</Keyword>
+            <Keyword MajorTopicYN="N">immunotherapy</Keyword>
+            <Keyword MajorTopicYN="N">melanoma</Keyword>
+            <Keyword MajorTopicYN="N">oncolytic virus</Keyword>
+            <Keyword MajorTopicYN="N">talimogene laherparepvec</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28351167</ArticleId>
+            <ArticleId IdType="doi">10.1177/1060028017702654</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">28326624</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1442-2042</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>24</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>International journal of urology : official journal of the Japanese Urological Association</Title>
+                <ISOAbbreviation>Int. J. Urol.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Current status of clinical trials assessing oncolytic virus therapy for urological cancers.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>342-351</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1111/iju.13325</ELocationID>
+            <Abstract>
+                <AbstractText>Oncolytic virus therapy has recently been recognized as a promising new option for cancer treatment. Oncolytic viruses replicate selectively in cancer cells, thus killing them without harming normal cells. Notably, T-VEC (talimogene laherparepvec, formerly called OncoVEX(GM)(-)(CSF) ), an oncolytic herpes simplex virus type 1, was approved by the US Food and Drug Administration for the treatment of inoperable melanoma in October 2015, and was subsequently approved in Europe and Australia in 2016. The efficacies of many types of oncolytic viruses against urological cancers have been investigated in preclinical studies during the past decade, and some have already been tested in clinical trials. For example, a phase I trial of the third-generation oncolytic Herpes simplex virus type 1, G47Δ, in patients with prostate cancer was completed in 2016. We summarize the current status of clinical trials of oncolytic virus therapy in patients with the three major urological cancers: prostate, bladder and renal cell cancers. In addition to Herpes simplex virus type 1, adenoviruses, reoviruses, vaccinia virus, Sendai virus and Newcastle disease virus have also been used as parental viruses in these trials. We believe that oncolytic virus therapy is likely to become an important and major treatment option for urological cancers in the near future.</AbstractText>
+                <CopyrightInformation>© 2017 The Japanese Urological Association.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Taguchi</LastName>
+                    <ForeName>Satoru</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Urology, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fukuhara</LastName>
+                    <ForeName>Hiroshi</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Urology, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Homma</LastName>
+                    <ForeName>Yukio</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Urology, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Todo</LastName>
+                    <ForeName>Tomoki</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Innovative Cancer Therapy, The Institute of Medical Science, The University of Tokyo, Tokyo, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>21</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Australia</Country>
+            <MedlineTA>Int J Urol</MedlineTA>
+            <NlmUniqueID>9440237</NlmUniqueID>
+            <ISSNLinking>0919-8172</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">G47Δ</Keyword>
+            <Keyword MajorTopicYN="N">Herpes simplex virus</Keyword>
+            <Keyword MajorTopicYN="N">clinical trial</Keyword>
+            <Keyword MajorTopicYN="N">oncolytic</Keyword>
+            <Keyword MajorTopicYN="N">virus therapy</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>14</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28326624</ArticleId>
+            <ArticleId IdType="doi">10.1111/iju.13325</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28316007</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>19</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>19</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1179-2027</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Mar</Month>
+                        <Day>18</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PharmacoEconomics</Title>
+                <ISOAbbreviation>Pharmacoeconomics</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Talimogene Laherparepvec for Treating Metastatic Melanoma: An Evidence Review Group Perspective of a NICE Single Technology Appraisal.</ArticleTitle>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s40273-017-0504-6</ELocationID>
+            <Abstract>
+                <AbstractText>The National Institute for Health and Care Excellence (NICE) invited the manufacturer (Amgen) of talimogene laherparepvec (T-VEC) to submit clinical and cost-effectiveness evidence for previously untreated advanced (unresectable or metastatic) melanoma as part of the Institute's Single Technology Appraisal process. The Liverpool Reviews and Implementation Group (LRiG) at the University of Liverpool was commissioned to act as the Evidence Review Group (ERG). This article presents a summary of the company's submission of T-VEC, the ERG review and the resulting NICE guidance (TA410), issued in September 2016. T-VEC is an oncolytic virus therapy granted a marketing authorisation by the European Commission for the treatment of adults with unresectable melanoma that is regionally or distantly metastatic (stage IIIB, IIIC and IVM1a) with no bone, brain, lung or other visceral disease. Clinical evidence for T-VEC versus granulocyte-macrophage colony-stimulating factor (GM-CSF) was derived from the multinational, open-label randomised controlled OPTiM trial [Oncovex (GM-CSF) Pivotal Trial in Melanoma]. In accordance with T-VEC's marketing authorisation, the company's submission focused primarily on 249 patients with stage IIIB to stage IV/M1a disease who constituted 57% of the overall trial population (T-VEC, n = 163 and GM-CSF, n = 86). Results from analyses of durable response rate, objective response rate, time to treatment failure and overall survival all showed marked and statistically significant improvements for patients treated with T-VEC compared with those treated with GM-CSF. However, GM-CSF is not used to treat melanoma in clinical practice. It was not possible to compare treatment with T-VEC with an appropriate comparator using conventionally accepted methods due to the absence of comparative head-to-head data or trials with sufficient common comparators. Therefore, the company compared T-VEC with ipilimumab using what it described as modified Korn and two-step Korn methods. Results from these analyses suggested that treatment with T-VEC was at least as effective as treatment with ipilimumab. Using the discounted patient access scheme (PAS) price for T-VEC and list price for ipilimumab, the company reported incremental cost-effectiveness ratios (ICERs) per quality-adjusted life-year (QALY) gained. For the comparison of treatment with T-VEC versus ipilimumab, the ICER per QALY gained was -£16,367 using the modified Korn method and -£60,271 using the two-step Korn method. The NICE Appraisal Committee (AC) agreed with the ERG that the company's methods for estimating clinical effectiveness of T-VEC versus ipilimumab were flawed and therefore produced unreliable results for modelling progression in stage IIIB to stage IVM1a melanoma. The AC concluded that the clinical and cost effectiveness of treatment with T-VEC compared with ipilimumab is unknown in patients with stage IIIB to stage IV/M1a disease. However, the AC considered that T-VEC may be a reasonable option for treating patients who are unsuitable for treatment with systemically administered immunotherapies (such as ipilimumab). T-VEC was therefore recommended by NICE as a treatment option for adults with unresectable, regionally or distantly metastatic (stage IIIB to stage IVM1a) melanoma that has not spread to bone, brain, lung or other internal organs, only if treatment with systemically administered immunotherapies is not suitable and the company provides T-VEC at the agreed discounted PAS price.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Fleeman</LastName>
+                    <ForeName>Nigel</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK. nigel.fleeman@liverpool.ac.uk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bagust</LastName>
+                    <ForeName>Adrian</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Boland</LastName>
+                    <ForeName>Angela</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Beale</LastName>
+                    <ForeName>Sophie</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Richardson</LastName>
+                    <ForeName>Marty</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Krishan</LastName>
+                    <ForeName>Ashma</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Stainthorpe</LastName>
+                    <ForeName>Angela</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Abdulla</LastName>
+                    <ForeName>Ahmed</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kotas</LastName>
+                    <ForeName>Eleanor</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Liverpool Reviews and Implementation Group, University of Liverpool, Room 2.10, Whelan Building, The Quadrangle, Brownlow Hill, Liverpool, L69 3GB, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Banks</LastName>
+                    <ForeName>Lindsay</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>North West Medicines Information Centre, Liverpool, L69 3GF, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Payne</LastName>
+                    <ForeName>Miranda</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Oxford University NHS Hospitals Trust, Oxford, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>New Zealand</Country>
+            <MedlineTA>Pharmacoeconomics</MedlineTA>
+            <NlmUniqueID>9212404</NlmUniqueID>
+            <ISSNLinking>1170-7690</ISSNLinking>
+        </MedlineJournalInfo>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28316007</ArticleId>
+            <ArticleId IdType="doi">10.1007/s40273-017-0504-6</ArticleId>
+            <ArticleId IdType="pii">10.1007/s40273-017-0504-6</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">28246438</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>01</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Print">0312-8008</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>40</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Feb</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Australian prescriber</Title>
+                <ISOAbbreviation>Aust Prescr</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Talimogene laherparepvec for melanoma.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>38-39</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.18773/austprescr.2016.094</ELocationID>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>01</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Australia</Country>
+            <MedlineTA>Aust Prescr</MedlineTA>
+            <NlmUniqueID>7804938</NlmUniqueID>
+            <ISSNLinking>0312-8008</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Oncol. 2009 Dec 1;27(34):5763-71</RefSource>
+                <PMID Version="1">19884534</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Immunother Cancer. 2014 May 13;2:11</RefSource>
+                <PMID Version="1">24971166</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Oncol. 2015 Sep 1;33(25):2780-8</RefSource>
+                <PMID Version="1">26014293</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28246438</ArticleId>
+            <ArticleId IdType="doi">10.18773/austprescr.2016.094</ArticleId>
+            <ArticleId IdType="pii">austprescr-40-38</ArticleId>
+            <ArticleId IdType="pmc">PMC5313250</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28238174</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>26</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>26</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1432-0851</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Feb</Month>
+                        <Day>25</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cancer immunology, immunotherapy : CII</Title>
+                <ISOAbbreviation>Cancer Immunol. Immunother.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Combining talimogene laherparepvec with immunotherapies in melanoma and other solid tumors.</ArticleTitle>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s00262-017-1967-1</ELocationID>
+            <Abstract>
+                <AbstractText>Talimogene laherparepvec is a first-in-class intralesional oncolytic immunotherapy. In a recent Phase III trial (OPTiM), talimogene laherparepvec significantly improved durable response rate compared with subcutaneous granulocyte-macrophage colony-stimulating factor (GM-CSF). Overall response rate was also higher in the talimogene laherparepvec arm, and the greatest efficacy was demonstrated in patients with earlier-stage (IIIB, IIIC, or IVM1a) melanoma. Talimogene laherparepvec was well tolerated, with the majority (89%) of adverse events being grade 1 or 2. Preclinical studies have shown that talimogene laherparepvec exerts antitumor activity by selectively replicating within and destroying cancer cells, and through the release of tumor-associated antigens and expression of GM-CSF, which facilitates a wider antitumor immune response. It is hypothesized that combining talimogene laherparepvec with a systemic immunotherapy may, by bringing together complementary mechanisms of action, further enhance the efficacy of both agents. Indeed, talimogene laherparepvec is currently being assessed in combination with immune checkpoint inhibitors, including ipilimumab and pembrolizumab, in trials for melanoma and other solid tumors. Early results in melanoma indicate that the combination of talimogene laherparepvec with ipilimumab or pembrolizumab has greater efficacy than either therapy alone, without additional safety concerns above those expected for each monotherapy. In this review, we discuss the latest results from trials assessing talimogene laherparepvec in combination with other immunotherapies, provide an overview of ongoing and upcoming combination trials, and suggest future directions for talimogene laherparepvec in combination therapy for solid tumors.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Dummer</LastName>
+                    <ForeName>Reinhard</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Dermatology, University of Zürich Hospital, Gloriastrasse 31, 8091, Zurich, Switzerland. reinhard.dummer@usz.ch.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hoeller</LastName>
+                    <ForeName>Christoph</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Medical University of Vienna, Vienna, Austria.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gruter</LastName>
+                    <ForeName>Isabella Pezzani</ForeName>
+                    <Initials>IP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Amgen (Europe) GmBH, Zug, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Michielin</LastName>
+                    <ForeName>Olivier</ForeName>
+                    <Initials>O</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Lausanne University Hospital, Lausanne, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>25</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Cancer Immunol Immunother</MedlineTA>
+            <NlmUniqueID>8605732</NlmUniqueID>
+            <ISSNLinking>0340-7004</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Checkpoint inhibitors</Keyword>
+            <Keyword MajorTopicYN="N">Combination treatment</Keyword>
+            <Keyword MajorTopicYN="N">Immunotherapy</Keyword>
+            <Keyword MajorTopicYN="N">Melanoma</Keyword>
+            <Keyword MajorTopicYN="N">Solid tumors</Keyword>
+            <Keyword MajorTopicYN="N">Talimogene laherparepvec</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>09</Month>
+                <Day>29</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>01</Month>
+                <Day>31</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28238174</ArticleId>
+            <ArticleId IdType="doi">10.1007/s00262-017-1967-1</ArticleId>
+            <ArticleId IdType="pii">10.1007/s00262-017-1967-1</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">2822412</PMID>
+        <DateCreated>
+            <Year>1987</Year>
+            <Month>12</Month>
+            <Day>08</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>1987</Year>
+            <Month>12</Month>
+            <Day>08</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>17</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0014-2956</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>168</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>1987</Year>
+                        <Month>Oct</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>European journal of biochemistry</Title>
+                <ISOAbbreviation>Eur. J. Biochem.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Activation of a ribosomal protein S6 kinase in mouse fibroblasts during infection with herpesvirus.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>371-6</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>If confluent fibroblasts are infected with the swine alpha-herpes virus, pseudorabies virus, ribosomal protein S6 becomes phosphorylated after a lag of approximately 2 h. When cell-free extracts were prepared from such cells in the presence of glycerol 2-phosphate and EGTA, a ribosomal protein S6 kinase activity was found to appear at approximately the same time as the phosphorylation in vivo. This protein kinase was similar to that activated in the same cells by replenishing the nutrient medium, and in other quiescent cells by the action of growth factors and mitogens. It was distinct from the previously described pseudorabies virus protein kinase, which is unique to infected cells. When medium from cells infected with pseudorabies virus was freed of virus and added to confluent fibroblasts, rapid activation of the ribosomal protein S6 kinase activity occurred. A similar, although more limited, effect could be seen when the pH of the medium was increased. These results suggest that the phosphorylation of ribosomal protein S6 in cells infected with herpes virus is a consequence of the production of a factor which initiates the metabolic programme for cellular growth. The possible function of this effect in the infective strategy of herpes viruses is discussed in relation to requirements for the replication of viral DNA.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Jakubowicz</LastName>
+                    <ForeName>T</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biochemistry, University of Glasgow, Scotland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Leader</LastName>
+                    <ForeName>D P</ForeName>
+                    <Initials>DP</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Eur J Biochem</MedlineTA>
+            <NlmUniqueID>0107600</NlmUniqueID>
+            <ISSNLinking>0014-2956</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D038601">Ribosomal Protein S6</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D012269">Ribosomal Proteins</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D014764">Viral Proteins</NameOfSubstance>
+            </Chemical>
+            <Chemical>
+                <RegistryNumber>EC 2.7.-</RegistryNumber>
+                <NameOfSubstance UI="D011494">Protein Kinases</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002472" MajorTopicYN="N">Cell Transformation, Viral</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002848" MajorTopicYN="N">Chromatography, DEAE-Cellulose</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D004789" MajorTopicYN="N">Enzyme Activation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005347" MajorTopicYN="N">Fibroblasts</DescriptorName>
+                <QualifierName UI="Q000201" MajorTopicYN="N">enzymology</QualifierName>
+                <QualifierName UI="Q000382" MajorTopicYN="N">microbiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006564" MajorTopicYN="N">Herpesviridae</DescriptorName>
+                <QualifierName UI="Q000254" MajorTopicYN="Y">growth &amp; development</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011558" MajorTopicYN="N">Herpesvirus 1, Suid</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006863" MajorTopicYN="N">Hydrogen-Ion Concentration</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D051379" MajorTopicYN="N">Mice</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010766" MajorTopicYN="N">Phosphorylation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011494" MajorTopicYN="N">Protein Kinases</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D038601" MajorTopicYN="N">Ribosomal Protein S6</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012269" MajorTopicYN="N">Ribosomal Proteins</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="Y">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013552" MajorTopicYN="N">Swine</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D014764" MajorTopicYN="N">Viral Proteins</DescriptorName>
+                <QualifierName UI="Q000494" MajorTopicYN="N">pharmacology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D014779" MajorTopicYN="N">Virus Replication</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>1987</Year>
+                <Month>10</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>1987</Year>
+                <Month>10</Month>
+                <Day>15</Day>
+                <Hour>0</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>1987</Year>
+                <Month>10</Month>
+                <Day>15</Day>
+                <Hour>0</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">2822412</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

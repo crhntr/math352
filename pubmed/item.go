@@ -2,7 +2,6 @@ package pubmed
 
 import (
 	"errors"
-	"io"
 	"time"
 )
 
@@ -14,10 +13,18 @@ func (article Article) Body() string {
 }
 
 func (article Article) Published() time.Time {
-	panic("not implemented")
+	return time.Date(
+		article.DatePublished.Year(),
+		article.DatePublished.Month(),
+		article.DatePublished.Day(),
+		0, 0, 0, 0, article.DatePublished.Location())
 }
 func (article Article) Added() time.Time {
-	panic("not implemented")
+	return time.Date(
+		article.DateAdded.Year(),
+		article.DateAdded.Month(),
+		article.DateAdded.Day(),
+		0, 0, 0, 0, article.DateAdded.Location())
 }
 
 func (article Article) Validate() error {
@@ -30,17 +37,6 @@ func (article Article) Validate() error {
 	return nil
 }
 
-func (article *Article) Read(p []byte) (n int, err error) {
-	if article.done {
-		return 0, io.EOF
-	}
-	read := []byte(article.ArticleTitle + article.AbstractText)[article.readIndex:]
-	n = copy(p, read)
-	article.readIndex += n
-	return
-}
-
-func (article *Article) ResetReader() {
-	article.done = false
-	article.readIndex = 0
+func (article Article) String() string {
+	return article.Title()
 }

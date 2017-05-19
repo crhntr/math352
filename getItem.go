@@ -15,8 +15,8 @@ func getItem(c *gin.Context) {
 		return
 	}
 
-	itemsMut.Lock()
-	defer itemsMut.Unlock()
+	// itemsMut.Lock()
+	// defer itemsMut.Unlock()
 	c.JSON(200, gin.H{
 		"data": items[id],
 	})

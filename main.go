@@ -2,31 +2,26 @@ package main
 
 import (
 	"flag"
+	"log"
 	"net/http"
-	"sync"
 
-	. "github.com/crhntr/math352/internal"
+	"github.com/crhntr/math352/pubmed"
+	"github.com/crhntr/naivegopher"
 	"github.com/gin-gonic/gin"
-	"github.com/jbrukh/bayesian"
 )
 
 const staticDirectoryPath = "static/"
 
 var (
-	verbose bool
+	verbose    bool
+	classifier = naivegopher.NewClassifier()
 
-	classifier      *bayesian.Classifier
-	classifierMutex = &sync.Mutex{}
-	classified      = 0
+	// itemsMut = &sync.Mutex{}
+	items []*pubmed.Article
 
-	itemsMut = &sync.Mutex{}
-	items    []Item
-
-	indexMut     = &sync.Mutex{}
-	index    int = 0
-	fetched      = false
-
-	defaultClasses = []bayesian.Class{"relevant", "irrelevent"}
+	// indexMut     = &sync.Mutex{}
+	index   int = 0
+	fetched     = false
 )
 
 func init() {
@@ -43,8 +38,17 @@ func main() {
 	// 	endLoadDataJob <- struct{}{}
 	// })
 
-	classifier = bayesian.NewClassifier(defaultClasses...)
 	router := gin.Default()
+
+	router.Use(
+		func(c *gin.Context) {
+			log.Println(c.Request.URL)
+			log.Println(len(items))
+			c.Next()
+			log.Println(len(items))
+		},
+	)
+
 	// router.Use(regesterRequestMiddleare)
 	router.StaticFile("/", staticDirectoryPath+"index.html")
 	router.StaticFS("/src/", http.Dir(staticDirectoryPath))
@@ -53,11 +57,7 @@ func main() {
 	// router.POST("/act/item/fetch", fetch)
 
 	router.GET("/api/class", func(c *gin.Context) {
-		c.JSON(200, gin.H{"classes": classifier.Classes})
-	})
-	router.GET("/api/class/:name", func(c *gin.Context) {
-		name := c.Param("name")
-		c.JSON(200, classifier.WordsByClass(bayesian.Class(name)))
+		c.JSON(200, gin.H{"classes": classifier.CategoryNames()})
 	})
 
 	router.PATCH("/api/item/:id/classes", patchItemClasses)

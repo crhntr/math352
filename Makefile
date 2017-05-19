@@ -12,7 +12,7 @@ static/bundles/main.js: $(wildcard frontend/*)
 
 backend: math352
 
-math352: $(wildcard *.go)
+math352: $(wildcard **.go)
 	go build
 
 clean:

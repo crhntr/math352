@@ -4,7 +4,6 @@ import (
 	"log"
 	"time"
 
-	. "github.com/crhntr/math352/internal"
 	"github.com/crhntr/math352/pubmed"
 )
 
@@ -41,28 +40,28 @@ func loadData(days int) {
 		Query: "talimogene laherparepvec [All Fields]",
 	}
 
-	tempItems := []Item{}
+	tempItems := []*pubmed.Article{}
 
 	timeIter := time.Now()
 	for timeIter.After(back) {
 		nItems, err := q.FetchItemsForDay(timeIter)
 		if err != nil {
-			log.Print(err)
-			continue
+			panic(err)
 		}
 		if len(nItems) > 0 {
 			log.Println("adding items")
-			log.Println(nItems)
-
 			for _, itm := range nItems {
+				log.Println(itm.Title())
+
 				tempItems = append(tempItems, itm)
 			}
 
 		}
+		log.Println()
 		timeIter = timeIter.Add(24 * (-1) * time.Hour)
 	}
 
-	itemsMut.Lock()
+	// itemsMut.Lock()
 	items = tempItems
-	itemsMut.Unlock()
+	// itemsMut.Unlock()
 }

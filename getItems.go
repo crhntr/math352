@@ -3,57 +3,39 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/jbrukh/bayesian"
 )
 
 func getItems(c *gin.Context) {
-	type Category struct {
-		Prob float64 `json:"prob"`
-		Log  float64 `json:"log"`
-	}
 	type ItemRecord struct {
-		ID             string                      `json:"id"`
-		Title          string                      `json:"title"`
-		Body           string                      `json:"body"`
-		Link           string                      `json:"link"`
-		LikelyCategory bayesian.Class              `json:"likely_category"`
-		Categories     map[bayesian.Class]Category `json:"categories"`
+		ID         string             `json:"id"`
+		Title      string             `json:"title"`
+		Body       string             `json:"body"`
+		Link       string             `json:"link"`
+		Categories map[string]float64 `json:"categories"`
 	}
 
 	itemRecords := []ItemRecord{}
 
-	itemsMut.Lock()
-	defer itemsMut.Unlock()
-	classifierMutex.Lock()
-	defer classifierMutex.Unlock()
-
+	// itemsMut.Lock()
+	// defer itemsMut.Unlock()
 	for i, item := range items {
 		ir := ItemRecord{
-			ID:             strconv.Itoa(i),
-			Title:          item.Title(),
-			Link:           fmt.Sprintf("/api/item/%d", i),
-			Body:           item.Body(),
-			LikelyCategory: "",
-			Categories:     map[bayesian.Class]Category{},
+			ID:         strconv.Itoa(i),
+			Title:      item.Title(),
+			Link:       fmt.Sprintf("/api/item/%d", i),
+			Body:       item.Body(),
+			Categories: map[string]float64{},
 		}
 
-		if classified > 5 {
-			lgscores, likely, _ := classifier.LogScores(Tokenize(item.Title() + " " + item.Body()))
-			pbscores, likely, _ := classifier.ProbScores(Tokenize(item.Title() + " " + item.Body()))
+		probabilities := classifier.ProbableCategoreies(strings.NewReader(
+			item.Title() + " " + item.Body(),
+		))
 
-			ir.LikelyCategory = classifier.Classes[likely]
-			for i, class := range classifier.Classes {
-				ir.Categories[class] = Category{
-					Log:  lgscores[i],
-					Prob: pbscores[i],
-				}
-			}
-		} else {
-			for _, dclass := range defaultClasses {
-				ir.Categories[dclass] = Category{}
-			}
+		for i, name := range classifier.CategoryNames() {
+			ir.Categories[name] = probabilities[i]
 		}
 
 		itemRecords = append(itemRecords, ir)

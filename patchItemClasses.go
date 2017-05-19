@@ -1,11 +1,12 @@
 package main
 
 import (
+	"fmt"
+	"log"
 	"strconv"
+	"strings"
 
 	"github.com/gin-gonic/gin"
-
-	"github.com/jbrukh/bayesian"
 )
 
 func patchItemClasses(c *gin.Context) {
@@ -20,25 +21,26 @@ func patchItemClasses(c *gin.Context) {
 		})
 		return
 	}
-	itemsMut.Lock()
+	// itemsMut.Lock()
 	if id > len(items) || id < 0 {
 		c.JSON(404, gin.H{
 			"error": "item with id not found: " + err.Error(),
 		})
 	}
-	defer itemsMut.Unlock()
+	// defer itemsMut.Unlock()
 
 	data := Data{}
 	if err = c.BindJSON(&data); err != nil {
 		c.JSON(404, gin.H{
-			"error": "invalid id: " + err.Error(),
+			"error": "invalid data: " + err.Error(),
 		})
 		return
 	}
-	classifierMutex.Lock()
-	defer classifierMutex.Unlock()
-	classified++
+	fmt.Println(data.Classes)
 	for _, class := range data.Classes {
-		classifier.Learn(append(Tokenize(items[id].Title()), Tokenize(items[id].Body())...), bayesian.Class(class))
+		log.Println("here")
+		classifier.Learn(class, strings.NewReader(
+			items[id].Title()+" "+items[id].Body(),
+		))
 	}
 }

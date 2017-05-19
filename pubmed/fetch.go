@@ -4,21 +4,18 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
-	"time"
-
-	. "github.com/crhntr/math352/internal"
-
 	"net/http"
 	"net/url"
 	"strings"
+	"time"
 )
 
 const dateFmt = "2006/01/02"
 
-func (q Query) FetchItemsForDay(d time.Time) ([]Item, error) {
+func (q Query) FetchItemsForDay(d time.Time) ([]*Article, error) {
 	day := time.Date(d.Year(), d.Month(), d.Day(), 0, 0, 0, 0, d.Location())
 	var (
-		items          = []Item{}
+		items          = []*Article{}
 		eSearchResults = ESearchResult{}
 		query          = q.Query
 	)
@@ -58,13 +55,21 @@ func (q Query) FetchItemsForDay(d time.Time) ([]Item, error) {
 		return items, err
 	}
 
+	// r, err := os.Open("static/testing.xml")
+	// if err != nil {
+	// 	return items, err
+	// }
+	// defer r.Close()
 	err = xml.NewDecoder(r.Body).Decode(&articlesSet)
 	if err != nil {
 		return items, err
 	}
 
 	for _, article := range articlesSet.Articles {
-		items = append(items, &article)
+		pub := article.Published()
+		if pub.Year() == day.Year() && pub.Month() == day.Month() && pub.Day() == day.Day() {
+			items = append(items, article)
+		}
 	}
 
 	return items, err

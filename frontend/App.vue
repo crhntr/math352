@@ -76,6 +76,7 @@
 		},
 	  methods: {
 			submitClasses() {
+				console.log("called")
 				if (this.item.categories.length > 0) {
 					this.$http.patch("/api/item/"+this.current_item_id+"/classes", {
 						"classes": this.item.categories,
@@ -127,16 +128,7 @@
 				}
 				console.log("next: " + this.current_item_id)
 				this.item = this.items[this.current_item_id]
-	    },
-			set_default_categories() {
-				console.log(this.item)
-				for(let cl in this.item.data.categories) {
-					console.log(cl, this.item.data[cl])
-				}
-			},
-			refreshCategory(category) {
-
-			}
+	    }
 	  }
 	}
 </script>
