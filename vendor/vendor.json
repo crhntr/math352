@@ -3,16 +3,10 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "JCKXN5Jv4vY2ydl9Fw1KDA0ntoc=",
-			"path": "github.com/crhntr/math352",
-			"revision": "ffa1b1af5ecadb170a1f5fbf67bf9070680a1b4a",
-			"revisionTime": "2017-05-19T07:25:47Z"
-		},
-		{
 			"checksumSHA1": "mzCao6m9jPG4cYKgTCeC+PuzGOA=",
 			"path": "github.com/crhntr/naivegopher",
-			"revision": "97f3d09e5161944b61e5afd736451b3baf773e81",
-			"revisionTime": "2017-05-19T07:04:30Z"
+			"revision": "e8bab22e618741e2525fda7af23355e8a2f544f0",
+			"revisionTime": "2017-05-19T07:49:58Z"
 		},
 		{
 			"checksumSHA1": "RsNwOto8G8aXIiRrlFn4dtU9q/g=",
