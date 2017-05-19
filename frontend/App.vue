@@ -3,7 +3,9 @@
 		<div class="page-container">
 			<div class="page">
 				<h1>Math352: Class Project</h1>
-				<a href="http://github.com/crhntr/math352" target="_blank">src</a>
+				<a href="http://github.com/crhntr/math352" target="_blank">Site Source (Using Vue.js and Go)</a><br />
+				<a href="https://github.com/crhntr/naivegopher" target="_blank">naivegopher (Baysian Naive Classification Implementation)</a>
+
 				<h2>Introduction</h2>
 				<p>During lecture we discussed Bayes' theorem, which describes the probability of an event based on some previous knowledge called the prior probability. Baysian Naive Classification is an algorithm in machine learning that uses Bayes' theorem to classify text, or sub-objects made up of sub objects. When categorizing text the sub-objects are words. The probability that a block of text is in a category is based on what words it contains and how many of each kind.</p>
 				<p>
